@@ -1,0 +1,1089 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Mnesia 数据库 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="debugging.html" />
+    
+    
+    <link rel="prev" href="ets.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">第一部分：基础</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../basics/basics.html">
+            
+                <a href="../basics/basics.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../basics/collections.html">
+            
+                <a href="../basics/collections.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../basics/enum.html">
+            
+                <a href="../basics/enum.html">
+            
+                    
+                    Enum 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../basics/pattern-matching.html">
+            
+                <a href="../basics/pattern-matching.html">
+            
+                    
+                    模式匹配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../basics/control-structures.html">
+            
+                <a href="../basics/control-structures.html">
+            
+                    
+                    控制语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../basics/functions.html">
+            
+                <a href="../basics/functions.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../basics/pipe-operator.html">
+            
+                <a href="../basics/pipe-operator.html">
+            
+                    
+                    管道操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../basics/modules.html">
+            
+                <a href="../basics/modules.html">
+            
+                    
+                    模块(Module)]
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../basics/mix.html">
+            
+                <a href="../basics/mix.html">
+            
+                    
+                    Mix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../basics/sigils.html">
+            
+                <a href="../basics/sigils.html">
+            
+                    
+                    魔符(Sigil)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../basics/documentation.html">
+            
+                <a href="../basics/documentation.html">
+            
+                    
+                    文档模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../basics/testing.html">
+            
+                <a href="../basics/testing.html">
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../basics/comprehensions.html">
+            
+                <a href="../basics/comprehensions.html">
+            
+                    
+                    推导
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../basics/strings.html">
+            
+                <a href="../basics/strings.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../basics/date-time.html">
+            
+                <a href="../basics/date-time.html">
+            
+                    
+                    日期和时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../basics/mix-tasks.html">
+            
+                <a href="../basics/mix-tasks.html">
+            
+                    
+                    自定义Mix任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../basics/iex-helpers.html">
+            
+                <a href="../basics/iex-helpers.html">
+            
+                    
+                    IEx辅助函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：高级</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../advanced/erlang.html">
+            
+                <a href="../advanced/erlang.html">
+            
+                    
+                    和Erlang互操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../advanced/error-handling.html">
+            
+                <a href="../advanced/error-handling.html">
+            
+                    
+                    错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../advanced/escripts.html">
+            
+                <a href="../advanced/escripts.html">
+            
+                    
+                    可执行文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../advanced/concurrency.html">
+            
+                <a href="../advanced/concurrency.html">
+            
+                    
+                    并发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../advanced/otp-concurrency.html">
+            
+                <a href="../advanced/otp-concurrency.html">
+            
+                    
+                    OTP并发]
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../advanced/otp-supervisors.html">
+            
+                <a href="../advanced/otp-supervisors.html">
+            
+                    
+                    OTP Supervisors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../advanced/otp-distribution.html">
+            
+                <a href="../advanced/otp-distribution.html">
+            
+                    
+                    OTP 分布式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../advanced/metaprogramming.html">
+            
+                <a href="../advanced/metaprogramming.html">
+            
+                    
+                    元编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../advanced/umbrella-projects.html">
+            
+                <a href="../advanced/umbrella-projects.html">
+            
+                    
+                    Umbrella Projects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../advanced/typespec.html">
+            
+                <a href="../advanced/typespec.html">
+            
+                    
+                    Specifications and types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../advanced/behaviours.html">
+            
+                <a href="../advanced/behaviours.html">
+            
+                    
+                    行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../advanced/gen-stage.html">
+            
+                <a href="../advanced/gen-stage.html">
+            
+                    
+                    GenStage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../advanced/protocols.html">
+            
+                <a href="../advanced/protocols.html">
+            
+                    
+                    协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../advanced/nerves.html">
+            
+                <a href="../advanced/nerves.html">
+            
+                    
+                    Nerves
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：ECTO</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../ecto/basics.html">
+            
+                <a href="../ecto/basics.html">
+            
+                    
+                    Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../ecto/changesets.html">
+            
+                <a href="../ecto/changesets.html">
+            
+                    
+                    Changesets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../ecto/associations.html">
+            
+                <a href="../ecto/associations.html">
+            
+                    
+                    关联关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../ecto/querying.html">
+            
+                <a href="../ecto/querying.html">
+            
+                    
+                    查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：专题</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="plug.html">
+            
+                <a href="plug.html">
+            
+                    
+                    Plug
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="eex.html">
+            
+                <a href="eex.html">
+            
+                    
+                    嵌入的 Elixir(EEx)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="ets.html">
+            
+                <a href="ets.html">
+            
+                    
+                    Erlang 项式存储(ETS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.4" data-path="mnesia.html">
+            
+                <a href="mnesia.html">
+            
+                    
+                    Mnesia 数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="debugging.html">
+            
+                <a href="debugging.html">
+            
+                    
+                    调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：程序库</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../libraries/guardian.html">
+            
+                <a href="../libraries/guardian.html">
+            
+                    
+                    Guardian(基础)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../libraries/poolboy.html">
+            
+                <a href="../libraries/poolboy.html">
+            
+                    
+                    Poolboy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../libraries/benchee.html">
+            
+                <a href="../libraries/benchee.html">
+            
+                    
+                    Benchee
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../libraries/bypass.html">
+            
+                <a href="../libraries/bypass.html">
+            
+                    
+                    Bypass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../libraries/distillery.html">
+            
+                <a href="../libraries/distillery.html">
+            
+                    
+                    Distillery(基础)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../libraries/stream-data.html">
+            
+                <a href="../libraries/stream-data.html">
+            
+                    
+                    StreamData
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Mnesia 数据库</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>Mnesia &#x662F;&#x4E00;&#x4E2A;&#x5F3A;&#x5927;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x5B9E;&#x65F6;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x3002;</p>
+<h2 id="&#x6982;&#x8981;">&#x6982;&#x8981;</h2>
+<p>Mnesia &#x662F; Erlang &#x8FD0;&#x884C;&#x65F6;&#x4E2D;&#x81EA;&#x5E26;&#x7684;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#xFF08;DBMS&#xFF09;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728; Elixir &#x4E2D;&#x5F88;&#x81EA;&#x7136;&#x5730;&#x4F7F;&#x7528;&#x3002;Mnesia &#x7684;&#x6570;&#x636E;&#x5E93;&#x6A21;&#x578B;&#x53EF;&#x4EE5;&#x6DF7;&#x5408;&#x4E86;&#x5173;&#x7CFB;&#x578B;&#x548C;&#x5BF9;&#x8C61;&#x578B;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7684;&#x7279;&#x5F81;&#xFF0C;&#x8BA9;&#x5B83;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5F00;&#x53D1;&#x4EFB;&#x4F55;&#x89C4;&#x6A21;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3002;</p>
+<h2 id="&#x5E94;&#x7528;&#x573A;&#x666F;">&#x5E94;&#x7528;&#x573A;&#x666F;</h2>
+<p>&#x4F55;&#x65F6;&#x8BE5;&#x4F7F;&#x7528;&#x4F55;&#x79CD;&#x6280;&#x672F;&#x5E38;&#x5E38;&#x662F;&#x4E00;&#x4E2A;&#x4EE4;&#x4EBA;&#x56F0;&#x60D1;&#x7684;&#x4E8B;&#x60C5;&#x3002;&#x5982;&#x679C;&#x4E0B;&#x9762;&#x8FD9;&#x4E9B;&#x95EE;&#x9898;&#x4E2D;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x7684;&#x7B54;&#x6848;&#x662F; yes &#x7684;&#x8BDD;&#xFF0C;&#x5219;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x597D;&#x7684;&#x8FF9;&#x8C61;&#x544A;&#x8BC9;&#x6211;&#x4EEC;&#x5728;&#x8FD9;&#x4E2A;&#x60C5;&#x51B5;&#x4E0B;&#x7528; Mnesia &#x6BD4;&#x7528; ETS &#x6216;&#x8005; DETS &#x8981;&#x9002;&#x5408;&#x3002;</p>
+<ul>
+<li>&#x6211;&#x662F;&#x5426;&#x9700;&#x8981;&#x56DE;&#x6EDA;&#x4E8B;&#x52A1;&#xFF1F;</li>
+<li>&#x6211;&#x662F;&#x5426;&#x9700;&#x8981;&#x7528;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x8BED;&#x6CD5;&#x6765;&#x8BFB;&#x5199;&#x6570;&#x636E;&#xFF1F;</li>
+<li>&#x6211;&#x662F;&#x5426;&#x9700;&#x8981;&#x5728;&#x591A;&#x4E8E;&#x4E00;&#x4E2A;&#x4EE5;&#x4E0A;&#x7684;&#x8282;&#x70B9;&#x5B58;&#x50A8;&#x6570;&#x636E;&#xFF1F;</li>
+<li>&#x6211;&#x662F;&#x5426;&#x9700;&#x8981;&#x9009;&#x62E9;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x7684;&#x4F4D;&#x7F6E;&#xFF08;&#x5185;&#x5B58;&#x8FD8;&#x662F;&#x786C;&#x76D8;&#xFF09;&#xFF1F;</li>
+</ul>
+<h2 id="schema">Schema</h2>
+<p>&#x56E0;&#x4E3A; Mnesia &#x5C5E;&#x4E8E; Erlang &#x6838;&#x5FC3;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x4F46;&#x662F; Elixir &#x8FD8;&#x6CA1;&#x6709;&#x5305;&#x542B;&#x5B83; &#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x8981;&#x7528; <code>:mnesia</code> &#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x53BB;&#x5F15;&#x7528; Mnesia &#xFF08;&#x53C2;&#x8003;<a href="../../advanced/erlang">&#x548C; Erlang &#x4E92;&#x64CD;&#x4F5C;</a>&#xFF09;&#x3002;</p>
+<pre><code class="lang-elixir">
+iex&gt; <span class="hljs-symbol">:mnesia</span>.create_schema([node()])
+
+<span class="hljs-comment"># or if you prefer the Elixir feel...</span>
+
+iex&gt; <span class="hljs-keyword">alias</span> <span class="hljs-symbol">:mnesia</span>, <span class="hljs-symbol">as:</span> Mnesia
+iex&gt; Mnesia.create_schema([node()])
+</code></pre>
+<p>&#x5728;&#x672C;&#x8BFE;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x4F7F;&#x7528;&#x540E;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x6765;&#x4F7F;&#x7528; Mnesia &#x7684; API&#x3002;<code>Mnesia.create_schema/1</code> &#x4F1A;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x7A7A;&#x7684; Schema &#x5E76;&#x4E14;&#x4F20;&#x9012;&#x7ED9;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x5217;&#x8868;&#x3002; &#x5728;&#x672C;&#x4F8B;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F20;&#x5165;&#x7684;&#x662F;&#x5F53;&#x524D; IEx &#x4F1A;&#x8BDD;&#x6240;&#x5728;&#x7684;&#x8282;&#x70B9;&#x3002;</p>
+<h2 id="&#x8282;&#x70B9;&#xFF08;node&#xFF09;">&#x8282;&#x70B9;&#xFF08;Node&#xFF09;</h2>
+<p>&#x4E00;&#x65E6;&#x6211;&#x4EEC;&#x5728; IEx &#x4E2D;&#x6267;&#x884C;&#x4E86; <code>Mnesia.create_schema([node()])</code> &#x547D;&#x4EE4;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x53EB; <strong>Mnesia.nonode@nohost</strong> &#x6216;&#x8005;&#x7C7B;&#x4F3C;&#x540D;&#x5B57;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x3002;&#x4F60;&#x4E5F;&#x8BB8;&#x4F1A;&#x597D;&#x5947;&#x5230;&#x5E95; <strong>nonode@nohost</strong> &#x4EE3;&#x8868;&#x7740;&#x4EC0;&#x4E48;&#xFF0C;&#x56E0;&#x4E3A;&#x5728;&#x4E4B;&#x524D;&#x7684;&#x8BFE;&#x7A0B;&#x4E2D;&#x5B83;&#x6CA1;&#x6709;&#x51FA;&#x73B0;&#x8FC7;&#x3002;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x6765;&#x4E00;&#x63A2;&#x7A76;&#x7ADF;&#xFF1A;</p>
+<pre><code class="lang-shell">$ iex --help
+Usage: iex [options] [.exs file] [data]
+
+  -v                Prints version
+  -e &quot;command&quot;      Evaluates the given command (*)
+  -r &quot;file&quot;         Requires the given files/patterns (*)
+  -S &quot;script&quot;       Finds and executes the given script
+  -pr &quot;file&quot;        Requires the given files/patterns in parallel (*)
+  -pa &quot;path&quot;        Prepends the given path to Erlang code path (*)
+  -pz &quot;path&quot;        Appends the given path to Erlang code path (*)
+  --app &quot;app&quot;       Start the given app and its dependencies (*)
+  --erl &quot;switches&quot;  Switches to be passed down to Erlang (*)
+  --name &quot;name&quot;     Makes and assigns a name to the distributed node
+  --sname &quot;name&quot;    Makes and assigns a short name to the distributed node
+  --cookie &quot;cookie&quot; Sets a cookie for this distributed node
+  --hidden          Makes a hidden node
+  --werl            Uses Erlang&apos;s Windows shell GUI (Windows only)
+  --detached        Starts the Erlang VM detached from console
+  --remsh &quot;name&quot;    Connects to a node using a remote shell
+  --dot-iex &quot;path&quot;  Overrides default .iex.exs file and uses path instead;
+                    path can be empty, then no file will be loaded
+
+** Options marked with (*) can be given more than once
+** Options given after the .exs file or -- are passed down to the executed code
+** Options can be passed to the VM using ELIXIR_ERL_OPTIONS or --erl
+</code></pre>
+<p>&#x5F53;&#x4F60;&#x7ED9; IEx &#x4F20;&#x9012; <code>--help</code> &#x9009;&#x9879;&#x7684;&#x65F6;&#x5019;&#xFF0C;IEx &#x4F1A;&#x5217;&#x51FA;&#x6240;&#x6709;&#x53EF;&#x7528;&#x7684;&#x9009;&#x9879;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6709; <code>--name</code> &#x548C; <code>--sname</code> &#x4E24;&#x4E2A;&#x9009;&#x9879;&#x53EF;&#x4EE5;&#x7ED9;&#x8282;&#x70B9;&#x8D77;&#x540D;&#x3002;
+&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#xFF08;Node&#xFF09;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x8FD0;&#x884C;&#x4E2D;&#x7684; Erlang &#x865A;&#x62DF;&#x673A;&#xFF0C;&#x5B83;&#x72EC;&#x81EA;&#x7BA1;&#x7406;&#x7740;&#x81EA;&#x5DF1;&#x7684;&#x901A;&#x4FE1;&#xFF0C;&#x5783;&#x573E;&#x56DE;&#x6536;&#xFF0C;&#x8FDB;&#x7A0B;&#x8C03;&#x5EA6;&#x4EE5;&#x53CA;&#x5185;&#x5B58;&#x7B49;&#x7B49;&#x3002;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x88AB;&#x7B80;&#x5355;&#x7684;&#x79F0;&#x4E3A; <strong>nonode@nohost</strong> &#x3002;</p>
+<pre><code class="lang-shell">$ iex --name learner@elixirschool.com
+
+Erlang/OTP {{ site.erlang.OTP }} [erts-{{ site.erlang.erts }}] [source] [64-bit] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false] [dtrace]
+
+Interactive Elixir ({{ site.elixir.version }}) - press Ctrl+C to exit (type h() ENTER for help)
+iex(learner@elixirschool.com)&gt; Node.self
+:&quot;learner@elixirschool.com&quot;
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x5F53;&#x6211;&#x7ED9;&#x8282;&#x70B9;&#x8D77;&#x540D;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5F53;&#x524D;&#x7684;&#x8282;&#x70B9;&#x540D;&#x5B57;&#x5DF2;&#x7ECF;&#x53EB;&#x505A; <code>:&quot;learner@elixirschool.com&quot;</code>&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x518D;&#x8FD0;&#x884C; <code>Mnesia.create_schema([node()])</code> &#x7684;&#x8BDD;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x770B;&#x5230;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x53EB;&#x505A; <strong>Mnesia.learner@elixirschool.com</strong> &#x7684;&#x6587;&#x4EF6;&#x5939;&#x3002;&#x8FD9;&#x6837;&#x8BBE;&#x8BA1;&#x7684;&#x76EE;&#x7684;&#x5F88;&#x7B80;&#x5355;&#x3002;Erlang &#x4E2D;&#x7684;&#x8282;&#x70B9;&#x53EA;&#x662F;&#x7528;&#x6765;&#x8FDE;&#x63A5;&#x5176;&#x4ED6;&#x8282;&#x70B9;&#x7528;&#x4EE5;&#x5206;&#x4EAB;&#xFF08;&#x5206;&#x53D1;&#xFF09;&#x4FE1;&#x606F;&#x548C;&#x8D44;&#x6E90;&#xFF0C;&#x5B83;&#x4EEC;&#x5E76;&#x4E0D;&#x4E00;&#x5B9A;&#x8981;&#x5728;&#x540C;&#x4E00;&#x53F0;&#x673A;&#x5668;&#x4E0A;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5C40;&#x57DF;&#x7F51;&#x6216;&#x8005;&#x4E92;&#x8054;&#x7F51;&#x7B49;&#x65B9;&#x5F0F;&#x901A;&#x4FE1;&#x3002;</p>
+<h2 id="&#x542F;&#x52A8;-mnesia">&#x542F;&#x52A8; Mnesia</h2>
+<p>&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x4E86;&#x89E3;&#x4E86;&#x5982;&#x4F55;&#x8BBE;&#x7F6E; Mnesia &#x6570;&#x636E;&#x5E93;&#xFF0C;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>Mnesia.start/0</code> &#x6765;&#x542F;&#x52A8;&#x5B83;&#x4E86;&#x3002;</p>
+<pre><code class="lang-elixir">iex&gt; <span class="hljs-keyword">alias</span> <span class="hljs-symbol">:mnesia</span>, <span class="hljs-symbol">as:</span> Mnesia
+iex&gt; Mnesia.create_schema([node()])
+<span class="hljs-symbol">:ok</span>
+iex&gt; Mnesia.start()
+<span class="hljs-symbol">:ok</span>
+</code></pre>
+<p>&#x51FD;&#x6570; <code>Mnesia.start/0</code> &#x662F;&#x5F02;&#x6B65;&#x7684;&#x3002; &#x5B83;&#x4F1A;&#x521D;&#x59CB;&#x5316;&#x73B0;&#x6709;&#x7684;&#x8868;&#x5E76;&#x8FD4;&#x56DE;&#x539F;&#x5B50; <code>:ok</code> &#x5982;&#x679C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;&#x542F;&#x52A8; Mnesia &#x4E4B;&#x540E;&#x7ACB;&#x5373;&#x5BF9;&#x73B0;&#x6709;&#x8868;&#x6267;&#x884C;&#x67D0;&#x4E9B;&#x64CD;&#x4F5C;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8C03;&#x7528;<code>Mnesia.wait_for_tables/2</code> &#x51FD;&#x6570;&#x3002; &#x5B83;&#x4F1A;&#x6302;&#x8D77;&#x8C03;&#x7528;&#x8005;&#xFF0C;&#x76F4;&#x5230;&#x8868;&#x88AB;&#x521D;&#x59CB;&#x5316;&#x3002; &#x5177;&#x4F53;&#x8BF7;&#x53C2;&#x9605;<a href="#&#x6570;&#x636E;&#x521D;&#x59CB;&#x5316;&#x548C;&#x8FC1;&#x79FB;">&#x6570;&#x636E;&#x521D;&#x59CB;&#x5316;&#x548C;&#x8FC1;&#x79FB;&#x4E00;&#x8282;&#x4E2D;&#x7684;&#x793A;&#x4F8B;</a></p>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x5728;&#x4E00;&#x4E2A;&#x6709;&#x591A;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;&#x4E2D;&#x8FD0;&#x884C; Mnesia&#xFF0C;&#x5FC5;&#x987B;&#x8981;&#x5728;&#x6BCF;&#x4E00;&#x4E2A;&#x53C2;&#x4E0E;&#x7684;&#x8282;&#x70B9;&#x4E0A;&#x9762;&#x8FD0;&#x884C; <code>Mnesia.start/1</code>&#x3002;</p>
+<h2 id="&#x521B;&#x5EFA;&#x8868;">&#x521B;&#x5EFA;&#x8868;</h2>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528; <code>Mnesia.create_table/2</code> &#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x521B;&#x5EFA;&#x8868;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; <code>Person</code> &#x7684;&#x8868;&#xFF0C;&#x5E76;&#x4E14;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#x5217;&#x8868;&#x6765;&#x5B9A;&#x4E49;&#x7ED3;&#x6784;&#x3002;</p>
+<pre><code class="lang-elixir">iex&gt; Mnesia.create_table(Person, [<span class="hljs-symbol">attributes:</span> [<span class="hljs-symbol">:id</span>, <span class="hljs-symbol">:name</span>, <span class="hljs-symbol">:job</span>]])
+{<span class="hljs-symbol">:atomic</span>, <span class="hljs-symbol">:ok</span>}
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x539F;&#x5B50; <code>:id</code>, <code>:name</code> &#x548C; <code>:job</code> &#x5B9A;&#x4E49;&#x4E86;&#x8868;&#x7684;&#x5B57;&#x6BB5;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#x539F;&#x5B50;&#x4F5C;&#x4E3A;&#x4E3B;&#x952E;(&#x4E5F;&#x5C31;&#x662F; <code>:id</code>)&#xFF0C;&#x5E76;&#x4E14;&#x81F3;&#x5C11;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x9644;&#x52A0;&#x5C5E;&#x6027;&#x3002;
+&#x5F53;&#x6211;&#x4EEC;&#x6267;&#x884C; <code>Mnesia.create_table/2</code> &#x53EF;&#x80FD;&#x8FD4;&#x56DE;&#x4E0B;&#x9762;&#x4E24;&#x79CD;&#x7ED3;&#x679C;&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x79CD;&#xFF1A;</p>
+<ul>
+<li><code>{:atomic, :ok}</code> &#x4EE3;&#x8868;&#x6267;&#x884C;&#x6210;&#x529F;</li>
+<li><code>{:aborted, Reason}</code> &#x4EE3;&#x8868;&#x6267;&#x884C;&#x5931;&#x8D25;</li>
+</ul>
+<p>&#x5982;&#x679C;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x540C;&#x540D;&#x7684;&#x8868;&#xFF0C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4E2D;&#x7684; <code>Reason</code> &#x4E3A; <code>{:already_exists, table}</code>&#x3002;&#x6240;&#x4EE5;&#x5F53;&#x6211;&#x4EEC;&#x518D;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x5F97;&#x5230;&#x4E0B;&#x9762;&#x7684;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-elixir">iex&gt; Mnesia.create_table(Person, [<span class="hljs-symbol">attributes:</span> [<span class="hljs-symbol">:id</span>, <span class="hljs-symbol">:name</span>, <span class="hljs-symbol">:job</span>]])
+{<span class="hljs-symbol">:aborted</span>, {<span class="hljs-symbol">:already_exists</span>, Person}}
+</code></pre>
+<h2 id="&#x810F;&#x64CD;&#x4F5C;">&#x810F;&#x64CD;&#x4F5C;</h2>
+<p>&#x9996;&#x5148;&#x6211;&#x4EEC;&#x6765;&#x5B66;&#x4E60;&#x5BF9; Mnesia &#x8868;&#x8BFB;&#x5199;&#x7684;&#x810F;&#x64CD;&#x4F5C;&#x65B9;&#x5F0F;&#x3002;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x4E0D;&#x4F1A;&#x4F7F;&#x7528;&#x810F;&#x64CD;&#x4F5C;&#xFF0C;&#x56E0;&#x4E3A;&#x810F;&#x64CD;&#x4F5C;&#x5E76;&#x4E0D;&#x4E00;&#x5B9A;&#x4FDD;&#x8BC1;&#x6210;&#x529F;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x5B66;&#x4E60;&#x548C;&#x9002;&#x5E94; Mnesia &#x7684;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x3002;&#x4E0B;&#x9762;&#x8BA9;&#x6211;&#x4EEC;&#x5F80; <strong>Person</strong> &#x8868;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x8BB0;&#x5F55;&#x3002;</p>
+<pre><code class="lang-elixir">iex&gt; Mnesia.dirty_write({Person, <span class="hljs-number">1</span>, <span class="hljs-string">&quot;Seymour Skinner&quot;</span>, <span class="hljs-string">&quot;Principal&quot;</span>})
+<span class="hljs-symbol">:ok</span>
+
+iex&gt; Mnesia.dirty_write({Person, <span class="hljs-number">2</span>, <span class="hljs-string">&quot;Homer Simpson&quot;</span>, <span class="hljs-string">&quot;Safety Inspector&quot;</span>})
+<span class="hljs-symbol">:ok</span>
+
+iex&gt; Mnesia.dirty_write({Person, <span class="hljs-number">3</span>, <span class="hljs-string">&quot;Moe Szyslak&quot;</span>, <span class="hljs-string">&quot;Bartender&quot;</span>})
+<span class="hljs-symbol">:ok</span>
+</code></pre>
+<p>...&#x7136;&#x540E;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>Mnesia.dirty_read/1</code> &#x6765;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#xFF1A;</p>
+<pre><code class="lang-elixir">iex&gt; Mnesia.dirty_read({Person, <span class="hljs-number">1</span>})
+[{Person, <span class="hljs-number">1</span>, <span class="hljs-string">&quot;Seymour Skinner&quot;</span>, <span class="hljs-string">&quot;Principal&quot;</span>}]
+
+iex&gt; Mnesia.dirty_read({Person, <span class="hljs-number">2</span>})
+[{Person, <span class="hljs-number">2</span>, <span class="hljs-string">&quot;Homer Simpson&quot;</span>, <span class="hljs-string">&quot;Safety Inspector&quot;</span>}]
+
+iex&gt; Mnesia.dirty_read({Person, <span class="hljs-number">3</span>})
+[{Person, <span class="hljs-number">3</span>, <span class="hljs-string">&quot;Moe Szyslak&quot;</span>, <span class="hljs-string">&quot;Bartender&quot;</span>}]
+
+iex&gt; Mnesia.dirty_read({Person, <span class="hljs-number">4</span>})
+[]
+</code></pre>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x67E5;&#x8BE2;&#x7684;&#x8BB0;&#x5F55;&#x4E0D;&#x5B58;&#x5728;&#x65F6;&#xFF0C;Mnesia &#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x7A7A;&#x7684;&#x5217;&#x8868;&#x3002;</p>
+<h2 id="&#x4E8B;&#x52A1;&#xFF08;transaction&#xFF09;">&#x4E8B;&#x52A1;&#xFF08;Transaction&#xFF09;</h2>
+<p>&#x6211;&#x4EEC;&#x4E00;&#x822C;&#x4F1A;&#x628A;&#x6211;&#x4EEC;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8BFB;&#x5199;&#x5305;&#x5728;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x4E8B;&#x52A1;&#x91CC;&#x9762;&#x3002;&#x5BF9;&#x4E8B;&#x52A1;&#x7684;&#x652F;&#x6301;&#x5BF9;&#x8BBE;&#x8BA1;&#x5BB9;&#x9519;&#x7CFB;&#x7EDF;&#x548C;&#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x3002;Mnesia &#x7684;&#x4E8B;&#x52A1;&#x662F;&#x901A;&#x8FC7;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x7684;&#x591A;&#x4E2A;&#x64CD;&#x4F5C;&#x5305;&#x542B;&#x5230;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4F53;&#x4E2D;&#x6765;&#x5B9E;&#x73B0;&#x3002;&#x9996;&#x5148;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x533F;&#x540D;&#x51FD;&#x6570;&#xFF0C;&#x5982;&#x6B64;&#x4F8B;&#x4E2D;&#x7684; <code>data_to_write</code>&#xFF0C;&#x7136;&#x540E;&#x628A;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4F20;&#x7ED9; <code>Mnesia.transaction</code>&#x3002;</p>
+<pre><code class="lang-elixir">iex&gt; data_to_write = <span class="hljs-keyword">fn</span> -&gt;
+...&gt;   Mnesia.write({Person, <span class="hljs-number">4</span>, <span class="hljs-string">&quot;Marge Simpson&quot;</span>, <span class="hljs-string">&quot;home maker&quot;</span>})
+...&gt;   Mnesia.write({Person, <span class="hljs-number">5</span>, <span class="hljs-string">&quot;Hans Moleman&quot;</span>, <span class="hljs-string">&quot;unknown&quot;</span>})
+...&gt;   Mnesia.write({Person, <span class="hljs-number">6</span>, <span class="hljs-string">&quot;Monty Burns&quot;</span>, <span class="hljs-string">&quot;Businessman&quot;</span>})
+...&gt;   Mnesia.write({Person, <span class="hljs-number">7</span>, <span class="hljs-string">&quot;Waylon Smithers&quot;</span>, <span class="hljs-string">&quot;Executive assistant&quot;</span>})
+...&gt; <span class="hljs-keyword">end</span>
+<span class="hljs-comment">#Function&lt;20.54118792/0 in :erl_eval.expr/5&gt;</span>
+
+iex&gt; Mnesia.transaction(data_to_write)
+{<span class="hljs-symbol">:atomic</span>, <span class="hljs-symbol">:ok</span>}
+</code></pre>
+<p>&#x4ECE; IEx &#x4E2D;&#x6253;&#x5370;&#x7684;&#x6D88;&#x606F;&#x6765;&#x770B;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5B89;&#x5168;&#x5730;&#x5047;&#x8BBE;&#x6570;&#x636E;&#x5DF2;&#x7ECF;&#x88AB;&#x6210;&#x529F;&#x5730;&#x5199;&#x8FDB;&#x4E86; <code>Person</code> &#x8868;&#x3002;&#x6211;&#x4EEC;&#x6765;&#x9A8C;&#x8BC1;&#x4E00;&#x4E0B;&#x4F7F;&#x7528;&#x4E8B;&#x52A1;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x91CC;&#x9762;&#x8BFB;&#x51FA;&#x521A;&#x521A;&#x5199;&#x5165;&#x7684;&#x6570;&#x636E;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528; <code>Mnesia.read/1</code> &#x6765;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x91CC;&#x9762;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#xFF0C;&#x540C;&#x6837;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x533F;&#x540D;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-elixir">iex&gt; data_to_read = <span class="hljs-keyword">fn</span> -&gt;
+...&gt;   Mnesia.read({Person, <span class="hljs-number">6</span>})
+...&gt; <span class="hljs-keyword">end</span>
+<span class="hljs-comment">#Function&lt;20.54118792/0 in :erl_eval.expr/5&gt;</span>
+
+iex&gt; Mnesia.transaction(data_to_read)
+{<span class="hljs-symbol">:atomic</span>, [{Person, <span class="hljs-number">6</span>, <span class="hljs-string">&quot;Monty Burns&quot;</span>, <span class="hljs-string">&quot;Businessman&quot;</span>}]}
+</code></pre>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x8981;&#x66F4;&#x65B0;&#x6570;&#x636E;&#xFF0C;&#x4F60;&#x8FD8;&#x662F;&#x8C03;&#x7528; <code>Mnesia.write/1</code>&#xFF0C;&#x53EA;&#x8981;&#x8BB0;&#x5F55;&#x91CC;&#x9762;&#x7684; key &#x548C;&#x73B0;&#x6709;&#x8BB0;&#x5F55;&#x7684; key &#x76F8;&#x540C;&#x5373;&#x53EF;&#x3002;&#x8981;&#x66F4;&#x65B0; Hans &#x90A3;&#x6761;&#x8BB0;&#x5F55;&#x7684;&#x8BDD;&#xFF0C;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x505A;&#xFF1A;</p>
+<pre><code class="lang-elixir">iex&gt; Mnesia.transaction(
+...&gt;   <span class="hljs-keyword">fn</span> -&gt;
+...&gt;     Mnesia.write({Person, <span class="hljs-number">5</span>, <span class="hljs-string">&quot;Hans Moleman&quot;</span>, <span class="hljs-string">&quot;Ex-Mayor&quot;</span>})
+...&gt;   <span class="hljs-keyword">end</span>
+...&gt; )
+</code></pre>
+<h2 id="&#x4F7F;&#x7528;&#x7D22;&#x5F15;">&#x4F7F;&#x7528;&#x7D22;&#x5F15;</h2>
+<p>Mnesia &#x4E5F;&#x652F;&#x6301;&#x5728;&#x975E;&#x4E3B;&#x952E;&#x5B57;&#x6BB5;&#x4E0A;&#x6DFB;&#x52A0;&#x7D22;&#x5F15;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x7D22;&#x5F15;&#x6765;&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x3002;&#x6211;&#x4EEC;&#x6765;&#x8BD5;&#x4E0B;&#x5728; <code>Person</code> &#x8868;&#x7684; <code>:job</code> &#x5B57;&#x6BB5;&#x4E0A;&#x6DFB;&#x52A0;&#x7D22;&#x5F15;&#xFF1A;</p>
+<pre><code class="lang-elixir">iex&gt; Mnesia.add_table_index(Person, <span class="hljs-symbol">:job</span>)
+{<span class="hljs-symbol">:atomic</span>, <span class="hljs-symbol">:ok</span>}
+</code></pre>
+<p>&#x7ED3;&#x679C;&#x8DDF; <code>Mnesia.create_table/2</code> &#x8FD4;&#x56DE;&#x7684;&#x76F8;&#x540C;&#xFF1A;</p>
+<ul>
+<li><code>{:atomic, :ok}</code> &#x8868;&#x793A;&#x6267;&#x884C;&#x6210;&#x529F;</li>
+<li><code>{:aborted, Reason}</code> &#x8868;&#x793A;&#x6267;&#x884C;&#x5931;&#x8D25;</li>
+</ul>
+<p>&#x7C7B;&#x4F3C;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x7D22;&#x5F15;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#xFF0C;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4E2D;&#x7684; <code>Reason</code> &#x4E3A; <code>{:already_exists, table, attribute_index}</code>&#x3002;&#x6240;&#x4EE5;&#x5F53;&#x6211;&#x4EEC;&#x518D;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x5F97;&#x5230;&#x4E0B;&#x9762;&#x7684;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-elixir">iex&gt; Mnesia.add_table_index(Person, <span class="hljs-symbol">:job</span>)
+{<span class="hljs-symbol">:aborted</span>, {<span class="hljs-symbol">:already_exists</span>, Person, <span class="hljs-number">4</span>}}
+</code></pre>
+<p>&#x521B;&#x5EFA;&#x7D22;&#x5F15;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7D22;&#x5F15;&#x6765;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#x4F7F;&#x7528; <code>Mnesia.index_read/2</code> &#x6765;&#x83B7;&#x53D6;&#x5DE5;&#x4F5C;&#x662F; <code>Principal</code> &#x7684;&#x8BB0;&#x5F55;&#xFF1A;</p>
+<pre><code class="lang-elixir">iex&gt; Mnesia.transaction(
+...&gt;   <span class="hljs-keyword">fn</span> -&gt;
+...&gt;     Mnesia.index_read(Person, <span class="hljs-string">&quot;Principal&quot;</span>, <span class="hljs-symbol">:job</span>)
+...&gt;   <span class="hljs-keyword">end</span>
+...&gt; )
+{<span class="hljs-symbol">:atomic</span>, [{Person, <span class="hljs-number">1</span>, <span class="hljs-string">&quot;Seymour Skinner&quot;</span>, <span class="hljs-string">&quot;Principal&quot;</span>}]}
+</code></pre>
+<h2 id="&#x5339;&#x914D;&#x548C;&#x9009;&#x62E9;">&#x5339;&#x914D;&#x548C;&#x9009;&#x62E9;</h2>
+<p>Mnesia&#x652F;&#x6301;&#x590D;&#x6742;&#x67E5;&#x8BE2;&#xFF0C;&#x4EE5;&#x5339;&#x914D;&#x548C;&#x4E34;&#x65F6;&#x9009;&#x62E9;&#x51FD;&#x6570;&#x7684;&#x5F62;&#x5F0F;&#x4ECE;&#x8868;&#x4E2D;&#x68C0;&#x7D22;&#x6570;&#x636E;&#x3002;</p>
+<p><code>Mnesia.match_object/1</code> &#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6A21;&#x5F0F;&#x5339;&#x914D;&#x53D6;&#x56DE;&#x6240;&#x6709;&#x5339;&#x914D;&#x7684;&#x8BB0;&#x5F55;&#x3002;&#x5982;&#x679C;&#x6709;&#x4E3A;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x6DFB;&#x52A0;&#x7D22;&#x5F15;&#x7684;&#x8BDD;&#xFF0C;&#x67E5;&#x8BE2;&#x7684;&#x6548;&#x7387;&#x4F1A;&#x66F4;&#x9AD8;&#x3002;&#x4E0D;&#x60F3;&#x67D0;&#x4E2A;&#x5B57;&#x6BB5;&#x53C2;&#x4E0E;&#x5339;&#x914D;&#x7684;&#x8BDD;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x539F;&#x5B50; <code>:_</code> &#x6765;&#x66FF;&#x4EE3;&#x3002;</p>
+<pre><code class="lang-elixir">iex&gt; Mnesia.transaction(
+...&gt;   <span class="hljs-keyword">fn</span> -&gt;
+...&gt;     Mnesia.match_object({Person, <span class="hljs-symbol">:_</span>, <span class="hljs-string">&quot;Marge Simpson&quot;</span>, <span class="hljs-symbol">:_</span>})
+...&gt;   <span class="hljs-keyword">end</span>
+...&gt; )
+{<span class="hljs-symbol">:atomic</span>, [{Person, <span class="hljs-number">4</span>, <span class="hljs-string">&quot;Marge Simpson&quot;</span>, <span class="hljs-string">&quot;home maker&quot;</span>}]}
+</code></pre>
+<p><code>Mnesia.select/2</code> &#x51FD;&#x6570;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x67E5;&#x8BE2;&#x51FD;&#x6570;&#x6765;&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x662F;&#x9009;&#x62E9;&#x6240;&#x6709; key &#x5927;&#x4E8E; 3 &#x7684;&#x8BB0;&#x5F55;&#xFF1A;</p>
+<pre><code class="lang-elixir">iex&gt; Mnesia.transaction(
+...&gt;   <span class="hljs-keyword">fn</span> -&gt;
+...&gt;     {% raw %}Mnesia.select(Person, [{{Person, <span class="hljs-symbol">:<span class="hljs-string">&quot;$1&quot;</span></span>, <span class="hljs-symbol">:<span class="hljs-string">&quot;$2&quot;</span></span>, <span class="hljs-symbol">:<span class="hljs-string">&quot;$3&quot;</span></span>}, [{<span class="hljs-symbol">:&gt;</span>, <span class="hljs-symbol">:<span class="hljs-string">&quot;$1&quot;</span></span>, <span class="hljs-number">3</span>}], [<span class="hljs-symbol">:<span class="hljs-string">&quot;$$&quot;</span></span>]}]){% endraw %}
+...&gt;   <span class="hljs-keyword">end</span>
+...&gt; )
+{<span class="hljs-symbol">:atomic</span>, [[<span class="hljs-number">7</span>, <span class="hljs-string">&quot;Waylon Smithers&quot;</span>, <span class="hljs-string">&quot;Executive assistant&quot;</span>], [<span class="hljs-number">4</span>, <span class="hljs-string">&quot;Marge Simpson&quot;</span>, <span class="hljs-string">&quot;home maker&quot;</span>], [<span class="hljs-number">6</span>, <span class="hljs-string">&quot;Monty Burns&quot;</span>, <span class="hljs-string">&quot;Businessman&quot;</span>], [<span class="hljs-number">5</span>, <span class="hljs-string">&quot;Hans Moleman&quot;</span>, <span class="hljs-string">&quot;unknown&quot;</span>]]}
+</code></pre>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x4ED4;&#x7EC6;&#x770B;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x8868;&#x540D;&#xFF0C;<code>Person</code>&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x662F; <code>{match, [guard], [result]}</code>&#x8FD9;&#x6837;&#x7684;&#x5F62;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li><code>match</code> &#x8DDF;&#x4F60;&#x4F20;&#x7ED9; <code>Mnesia.match_object/1</code> &#x51FD;&#x6570;&#x7684;&#x90A3;&#x4E2A;&#x53C2;&#x6570;&#x4E00;&#x6837;&#xFF1B;&#x4F46;&#x662F;&#x8BF7;&#x6CE8;&#x610F;&#x90A3;&#x4E2A;&#x7279;&#x522B;&#x7684;&#x539F;&#x5B50;<code>:&quot;$n&quot;</code>&#x662F;&#x7528;&#x6765;&#x6307;&#x5B9A;&#x540E;&#x9762;&#x90E8;&#x5206;&#x7684;&#x53C2;&#x6570;&#x4F4D;&#x7F6E;&#x3002;</li>
+<li><code>guard</code> &#x5217;&#x8868;&#x91CC;&#x9762;&#x5305;&#x542B;&#x4E86;&#x4F60;&#x60F3;&#x8981;&#x5E94;&#x7528;&#x7684;&#x8FC7;&#x6EE4;&#x51FD;&#x6570;&#x548C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x7684;&#x5143;&#x7EC4;&#x3002;&#x5728;&#x672C;&#x4F8B;&#x4E2D;&#xFF0C; &#x662F;&#x7531;&#x5185;&#x7F6E;&#x51FD;&#x6570; <code>:&gt;</code> , &#x4F4D;&#x7F6E;&#x53C2;&#x6570; <code>:$1</code>&#x4EE5;&#x53CA;&#x5E38;&#x6570; <code>3</code> &#x7EC4;&#x6210;&#x3002;</li>
+<li><code>result</code> &#x5217;&#x8868;&#x662F;&#x4F60;&#x5E0C;&#x671B;&#x67E5;&#x8BE2;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x7684;&#x5B57;&#x6BB5;&#x7684;&#x5217;&#x8868;&#x3002;<code>:&quot;$$&quot;</code> &#x7528;&#x6765;&#x8868;&#x793A;&#x8FD4;&#x56DE;&#x6240;&#x6709;&#x5B57;&#x6BB5;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x7528; <code>[:&quot;$1&quot;, :&quot;$2&quot;]</code> &#x6765;&#x8FD4;&#x56DE;&#x5934;&#x4E24;&#x4E2A;&#x5B57;&#x6BB5;&#x3002;</li>
+</ul>
+<p>&#x66F4;&#x591A;&#x7684;&#x4FE1;&#x606F;&#x8BF7;&#x53C2;&#x8003; Erlang &#x7684;<a href="http://erlang.org/doc/man/mnesia.html#select-2" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a>.</p>
+<h2 id="&#x6570;&#x636E;&#x521D;&#x59CB;&#x5316;&#x548C;&#x8FC1;&#x79FB;">&#x6570;&#x636E;&#x521D;&#x59CB;&#x5316;&#x548C;&#x8FC1;&#x79FB;</h2>
+<p>&#x4E0D;&#x7BA1;&#x662F;&#x4EC0;&#x4E48;&#x8F6F;&#x4EF6;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x90FD;&#x4F1A;&#x78B0;&#x5230;&#x9700;&#x8981;&#x66F4;&#x65B0;&#x4F60;&#x7684;&#x7CFB;&#x7EDF;&#x5E76;&#x4E14;&#x8FC1;&#x79FB;&#x4F60;&#x6570;&#x636E;&#x5E93;&#x91CC;&#x7684;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x3002;&#x6BD4;&#x65B9;&#x8BF4;&#xFF0C;&#x4F60;&#x5728;&#x4F60;&#x7684;&#x7CFB;&#x7EDF;&#x7684;&#x7B2C;&#x4E8C;&#x7248;&#x4E2D;&#x9700;&#x8981;&#x5F80; <code>Person</code> &#x8868;&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A; <code>:age</code> &#x5B57;&#x6BB5;&#x3002;&#x6211;&#x4EEC;&#x4E0D;&#x80FD;&#x518D;&#x91CD;&#x65B0;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; <code>Person</code> &#x8868;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6539;&#x9020;&#x8FD9;&#x5F20;&#x8868;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x77E5;&#x9053;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x9700;&#x8981;&#x66F4;&#x6539;&#x8868;&#x3002;&#x8981;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528; <code>Mnesia.table_info/2</code> &#x51FD;&#x6570;&#x83B7;&#x53D6;&#x73B0;&#x5728;&#x7684;&#x8868;&#x7ED3;&#x6784;&#xFF0C;&#x4EE5;&#x53CA;&#x901A;&#x8FC7; <code>Mnesia.transform_table/3</code> &#x51FD;&#x6570;&#x6765;&#x6539;&#x53D8;&#x8868;&#x7ED3;&#x6784;&#x3002;</p>
+<p>&#x5728;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x5B9E;&#x73B0;&#x8FD9;&#x4E9B;&#x903B;&#x8F91;&#xFF1A;</p>
+<ul>
+<li>&#x521B;&#x5EFA; v2 &#x7684;&#x8868;&#x7ED3;&#x6784;&#xFF0C;&#x5305;&#x62EC;&#x8FD9;&#x4E9B;&#x5C5E;&#x6027;&#xFF1A; <code>[:id, :name, :job, :age]</code></li>
+<li>&#x6839;&#x636E;&#x5EFA;&#x8868;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x5206;&#x522B;&#x5904;&#x7406;&#xFF1A;<ul>
+<li><code>{:atomic, :ok}</code>: &#x4E3A; <code>Person</code> &#x8868;&#x7684; <code>:job</code> &#x548C; <code>:age</code> &#x5B57;&#x6BB5;&#x6DFB;&#x52A0;&#x7D22;&#x5F15;</li>
+<li><code>{:aborted, {:already_exists, Person}}</code>: &#x68C0;&#x67E5;&#x73B0;&#x6709;&#x7684;&#x5B57;&#x6BB5;&#x5E76;&#x4E14;&#x505A;&#x76F8;&#x5E94;&#x7684;&#x5904;&#x7406;&#xFF1A;<ul>
+<li>&#x5982;&#x679C;&#x662F; v1 &#x7684;&#x5B57;&#x6BB5;&#x5217;&#x8868; (<code>[:id, :name, :job]</code>)&#xFF0C;&#x6539;&#x9020;&#x8868;&#x7ED3;&#x6784;&#xFF0C;&#x7ED9;&#x6240;&#x6709;&#x4EBA;&#x7684;&#x5E74;&#x9F84;&#x8BBE;&#x4E3A; 21 &#x5E76;&#x4E14;&#x5728; <code>:age</code> &#x4E0A;&#x6DFB;&#x52A0;&#x7D22;&#x5F15;</li>
+<li>&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x662F;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684; v2 &#x7684;&#x5B57;&#x6BB5;&#x5217;&#x8868;&#xFF0C;&#x5219;&#x65E0;&#x9700;&#x505A;&#x4EFB;&#x4F55;&#x5904;&#x7406;</li>
+<li>&#x5982;&#x679C;&#x662F;&#x5176;&#x4ED6;&#x60C5;&#x51B5;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x9519;&#x8BEF;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5728;&#x7528; <code>Mnesia.start/0</code> &#x542F;&#x52A8; Mnesia &#x540E;&#x9A6C;&#x4E0A;&#x5BF9;&#x73B0;&#x6709;&#x7684;&#x8868;&#x8FDB;&#x884C;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x4E9B;&#x8868;&#x53EF;&#x80FD;&#x8FD8;&#x6CA1;&#x6709;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x5E76;&#x4E14;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x3002;&#x5728;&#x8FD9;&#x6837;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x4F7F;&#x7528; <a href="http://erlang.org/doc/man/mnesia.html#wait_for_tables-2" target="_blank"><code>Mnesia.wait_for_tables/2</code></a> &#x51FD;&#x6570;&#x3002;&#x5B83;&#x4F1A;&#x6302;&#x8D77;&#x5F53;&#x524D;&#x7684;&#x8FDB;&#x7A0B;&#xFF0C;&#x76F4;&#x5230;&#x6570;&#x636E;&#x5E93;&#x8868;&#x521D;&#x59CB;&#x5316;&#x5B8C;&#x6BD5;&#xFF0C;&#x6216;&#x8005;&#x8D85;&#x65F6;&#x3002;</p>
+<p><code>Mnesia.transform_table/3</code> &#x51FD;&#x6570;&#x63A5;&#x53D7;&#x7684;&#x53C2;&#x6570;&#x5217;&#x8868;&#x4E3A;&#xFF0C;&#x8868;&#x540D;&#x548C;&#x4E00;&#x4E2A;&#x628A;&#x65E7;&#x7684;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x8F6C;&#x6362;&#x4E3A;&#x65B0;&#x7684;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-elixir"><span class="hljs-keyword">case</span> Mnesia.create_table(Person, [<span class="hljs-symbol">attributes:</span> [<span class="hljs-symbol">:id</span>, <span class="hljs-symbol">:name</span>, <span class="hljs-symbol">:job</span>, <span class="hljs-symbol">:age</span>]])
+  {<span class="hljs-symbol">:atomic</span>, <span class="hljs-symbol">:ok</span>} -&gt;
+    Mnesia.add_table_index(Person, <span class="hljs-symbol">:job</span>)
+    Mnesia.add_table_index(Person, <span class="hljs-symbol">:age</span>)
+  {<span class="hljs-symbol">:aborted</span>, {<span class="hljs-symbol">:already_exists</span>, Person}} -&gt;
+    <span class="hljs-keyword">case</span> Mnesia.table_info(Person, <span class="hljs-symbol">:attributes</span>) <span class="hljs-keyword">do</span>
+      [<span class="hljs-symbol">:id</span>, <span class="hljs-symbol">:name</span>, <span class="hljs-symbol">:job</span>] -&gt;
+        Mnesia.wait_for_tables([Person], <span class="hljs-number">5000</span>)
+        Mnesia.transform_table(
+          Person,
+          <span class="hljs-keyword">fn</span> ({Person, id, name, job}) -&gt;
+            {Person, id, name, job, <span class="hljs-number">21</span>}
+          <span class="hljs-keyword">end</span>,
+          [<span class="hljs-symbol">:id</span>, <span class="hljs-symbol">:name</span>, <span class="hljs-symbol">:job</span>, <span class="hljs-symbol">:age</span>]
+          )
+        Mnesia.add_table_index(Person, <span class="hljs-symbol">:age</span>)
+      [<span class="hljs-symbol">:id</span>, <span class="hljs-symbol">:name</span>, <span class="hljs-symbol">:job</span>, <span class="hljs-symbol">:age</span>] -&gt;
+        <span class="hljs-symbol">:ok</span>
+      other -&gt;
+        {<span class="hljs-symbol">:error</span>, other}
+    <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ets.html" class="navigation navigation-prev " aria-label="Previous page: Erlang 项式存储(ETS)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="debugging.html" class="navigation navigation-next " aria-label="Next page: 调试">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"version":"1.2.0","title":"Mnesia 数据库","level":"4.4","depth":1,"next":{"title":"调试","level":"4.5","depth":1,"path":"lessons/specifics/debugging.md","ref":"lessons/specifics/debugging.md","articles":[]},"previous":{"title":"Erlang 项式存储(ETS)","level":"4.3","depth":1,"path":"lessons/specifics/ets.md","ref":"lessons/specifics/ets.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lessons/specifics/mnesia.md","mtime":"2019-11-04T13:43:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-04T15:36:14.037Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

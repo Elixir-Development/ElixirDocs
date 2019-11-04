@@ -1,0 +1,1157 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>OTP 分布式 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="metaprogramming.html" />
+    
+    
+    <link rel="prev" href="otp-supervisors.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">第一部分：基础</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../basics/basics.html">
+            
+                <a href="../basics/basics.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../basics/collections.html">
+            
+                <a href="../basics/collections.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../basics/enum.html">
+            
+                <a href="../basics/enum.html">
+            
+                    
+                    Enum 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../basics/pattern-matching.html">
+            
+                <a href="../basics/pattern-matching.html">
+            
+                    
+                    模式匹配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../basics/control-structures.html">
+            
+                <a href="../basics/control-structures.html">
+            
+                    
+                    控制语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../basics/functions.html">
+            
+                <a href="../basics/functions.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../basics/pipe-operator.html">
+            
+                <a href="../basics/pipe-operator.html">
+            
+                    
+                    管道操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../basics/modules.html">
+            
+                <a href="../basics/modules.html">
+            
+                    
+                    模块(Module)]
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../basics/mix.html">
+            
+                <a href="../basics/mix.html">
+            
+                    
+                    Mix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../basics/sigils.html">
+            
+                <a href="../basics/sigils.html">
+            
+                    
+                    魔符(Sigil)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../basics/documentation.html">
+            
+                <a href="../basics/documentation.html">
+            
+                    
+                    文档模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../basics/testing.html">
+            
+                <a href="../basics/testing.html">
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../basics/comprehensions.html">
+            
+                <a href="../basics/comprehensions.html">
+            
+                    
+                    推导
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../basics/strings.html">
+            
+                <a href="../basics/strings.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../basics/date-time.html">
+            
+                <a href="../basics/date-time.html">
+            
+                    
+                    日期和时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../basics/mix-tasks.html">
+            
+                <a href="../basics/mix-tasks.html">
+            
+                    
+                    自定义Mix任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../basics/iex-helpers.html">
+            
+                <a href="../basics/iex-helpers.html">
+            
+                    
+                    IEx辅助函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：高级</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="erlang.html">
+            
+                <a href="erlang.html">
+            
+                    
+                    和Erlang互操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="error-handling.html">
+            
+                <a href="error-handling.html">
+            
+                    
+                    错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="escripts.html">
+            
+                <a href="escripts.html">
+            
+                    
+                    可执行文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="concurrency.html">
+            
+                <a href="concurrency.html">
+            
+                    
+                    并发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="otp-concurrency.html">
+            
+                <a href="otp-concurrency.html">
+            
+                    
+                    OTP并发]
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="otp-supervisors.html">
+            
+                <a href="otp-supervisors.html">
+            
+                    
+                    OTP Supervisors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.7" data-path="otp-distribution.html">
+            
+                <a href="otp-distribution.html">
+            
+                    
+                    OTP 分布式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="metaprogramming.html">
+            
+                <a href="metaprogramming.html">
+            
+                    
+                    元编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="umbrella-projects.html">
+            
+                <a href="umbrella-projects.html">
+            
+                    
+                    Umbrella Projects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="typespec.html">
+            
+                <a href="typespec.html">
+            
+                    
+                    Specifications and types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="behaviours.html">
+            
+                <a href="behaviours.html">
+            
+                    
+                    行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="gen-stage.html">
+            
+                <a href="gen-stage.html">
+            
+                    
+                    GenStage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="protocols.html">
+            
+                <a href="protocols.html">
+            
+                    
+                    协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="nerves.html">
+            
+                <a href="nerves.html">
+            
+                    
+                    Nerves
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：ECTO</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../ecto/basics.html">
+            
+                <a href="../ecto/basics.html">
+            
+                    
+                    Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../ecto/changesets.html">
+            
+                <a href="../ecto/changesets.html">
+            
+                    
+                    Changesets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../ecto/associations.html">
+            
+                <a href="../ecto/associations.html">
+            
+                    
+                    关联关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../ecto/querying.html">
+            
+                <a href="../ecto/querying.html">
+            
+                    
+                    查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：专题</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../specifics/plug.html">
+            
+                <a href="../specifics/plug.html">
+            
+                    
+                    Plug
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../specifics/eex.html">
+            
+                <a href="../specifics/eex.html">
+            
+                    
+                    嵌入的 Elixir(EEx)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../specifics/ets.html">
+            
+                <a href="../specifics/ets.html">
+            
+                    
+                    Erlang 项式存储(ETS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../specifics/mnesia.html">
+            
+                <a href="../specifics/mnesia.html">
+            
+                    
+                    Mnesia 数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../specifics/debugging.html">
+            
+                <a href="../specifics/debugging.html">
+            
+                    
+                    调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：程序库</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../libraries/guardian.html">
+            
+                <a href="../libraries/guardian.html">
+            
+                    
+                    Guardian(基础)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../libraries/poolboy.html">
+            
+                <a href="../libraries/poolboy.html">
+            
+                    
+                    Poolboy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../libraries/benchee.html">
+            
+                <a href="../libraries/benchee.html">
+            
+                    
+                    Benchee
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../libraries/bypass.html">
+            
+                <a href="../libraries/bypass.html">
+            
+                    
+                    Bypass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../libraries/distillery.html">
+            
+                <a href="../libraries/distillery.html">
+            
+                    
+                    Distillery(基础)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../libraries/stream-data.html">
+            
+                <a href="../libraries/stream-data.html">
+            
+                    
+                    StreamData
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >OTP 分布式</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x5206;&#x5E03;&#x5F0F;&#x7B80;&#x4ECB;">&#x5206;&#x5E03;&#x5F0F;&#x7B80;&#x4ECB;</h2>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;&#x6211;&#x4EEC;&#x7684; Elixir &#x5E94;&#x7528;&#x8FD0;&#x884C;&#x5206;&#x5E03;&#x5728;&#x5355;&#x4E3B;&#x673A;&#xFF0C;&#x6216;&#x8005;&#x591A;&#x4E3B;&#x673A;&#x7684;&#x4E0D;&#x540C;&#x7684;&#x8282;&#x70B9;&#x4E0A;&#x3002;Elixir &#x5141;&#x8BB8;&#x8FD9;&#x4E9B;&#x4E0D;&#x540C;&#x7684;&#x8282;&#x70B9;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x8BFE;&#x7A0B;&#x4E2D;&#x5217;&#x51FA;&#x6765;&#x7684;&#x4E0D;&#x540C;&#x7684;&#x673A;&#x5236;&#x6765;&#x76F8;&#x4E92;&#x901A;&#x4FE1;&#x3002;</p>
+<h2 id="&#x8282;&#x70B9;&#x95F4;&#x901A;&#x4FE1;">&#x8282;&#x70B9;&#x95F4;&#x901A;&#x4FE1;</h2>
+<p>Elixir &#x8FD0;&#x884C;&#x5728; Erlang &#x865A;&#x62DF;&#x673A;&#x4E4B;&#x4E0A;&#xFF0C;&#x4E5F;&#x5C31;&#x610F;&#x5473;&#x7740;&#x5B83;&#x62E5;&#x6709;&#x4E86; Erlang &#x5F3A;&#x5927;&#x7684;<a href="http://erlang.org/doc/reference_manual/distributed.html" target="_blank">&#x5206;&#x5E03;&#x5F0F;&#x7279;&#x6027;&#x3002;</a></p>
+<blockquote>
+<p>&#x4E00;&#x4E2A;&#x5206;&#x5E03;&#x5F0F; Erlang &#x7CFB;&#x7EDF;&#x7531;&#x76F8;&#x4E92;&#x6C9F;&#x901A;&#x7684; Erlang &#x8FD0;&#x884C;&#x73AF;&#x5883;&#x7EC4;&#x6210;&#x3002;&#x6BCF;&#x4E2A;&#x8FD9;&#x6837;&#x7684;&#x73AF;&#x5883;&#x79F0;&#x4E4B;&#x4E3A;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x3002;</p>
+</blockquote>
+<p>&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x5C31;&#x662F;&#x8D4B;&#x4E88;&#x4E86;&#x540D;&#x5B57;&#x7684; Erlang &#x8FD0;&#x884C;&#x73AF;&#x5883;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6253;&#x5F00; <code>iex</code> &#x4F1A;&#x8BDD;&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E;&#x540D;&#x79F0;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#xFF1A;</p>
+<pre><code class="lang-bash">iex --sname alex@localhost
+iex(alex@localhost)&gt;
+</code></pre>
+<p>&#x7136;&#x540E;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x53E6;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x884C;&#x7A97;&#x53E3;&#x542F;&#x52A8;&#x53E6;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#xFF1A;</p>
+<pre><code class="lang-bash">iex --sname kate@localhost
+iex(kate@localhost)&gt;
+</code></pre>
+<p>&#x8FD9;&#x4E24;&#x4E2A;&#x8282;&#x70B9;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>Node.spawn_link/2</code> &#x6765;&#x76F8;&#x4E92;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x3002;</p>
+<h3 id="&#x901A;&#x8FC7;-nodespawnlink2-&#x6765;&#x901A;&#x4FE1;">&#x901A;&#x8FC7; <code>Node.spawn_link/2</code> &#x6765;&#x901A;&#x4FE1;</h3>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x9700;&#x8981;&#x63A5;&#x6536;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;</p>
+<ul>
+<li>&#x9700;&#x8981;&#x8FDE;&#x63A5;&#x7684;&#x8282;&#x70B9;&#x540D;&#x79F0;  </li>
+<li>&#x9700;&#x8981;&#x8FDC;&#x7A0B;&#x8282;&#x70B9;&#x8FD0;&#x884C;&#x7684;&#x51FD;&#x6570;  </li>
+</ul>
+<p>&#x5B83;&#x4F1A;&#x548C;&#x8FDC;&#x7A0B;&#x8282;&#x70B9;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x5BF9;&#x65B9;&#x90A3;&#x8FD0;&#x884C;&#x6307;&#x5B9A;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x7136;&#x540E;&#x8FD4;&#x56DE;&#x5173;&#x8054;&#x8FDB;&#x7A0B;&#x7684; PID&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x5148;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;<code>Kate</code>&#xFF0C;&#x5728; <code>kate</code> &#x8282;&#x70B9;&#x4E0A;&#xFF0C;&#x5E76;&#x61C2;&#x5F97;&#x5982;&#x4F55;&#x4ECB;&#x7ECD; Kate &#x8FD9;&#x4E2A;&#x4EBA;&#xFF1A;</p>
+<pre><code class="lang-elixir">iex(kate<span class="hljs-variable">@localhost</span>)&gt; <span class="hljs-class"><span class="hljs-keyword">defmodule</span> <span class="hljs-title">Kate</span></span> <span class="hljs-keyword">do</span>
+...(kate<span class="hljs-variable">@localhost</span>)&gt;   <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">say_name</span></span> <span class="hljs-keyword">do</span>
+...(kate<span class="hljs-variable">@localhost</span>)&gt;     IO.puts <span class="hljs-string">&quot;Hi, my name is Kate&quot;</span>
+...(kate<span class="hljs-variable">@localhost</span>)&gt;   <span class="hljs-keyword">end</span>
+...(kate<span class="hljs-variable">@localhost</span>)&gt; <span class="hljs-keyword">end</span>
+</code></pre>
+<h4 id="&#x53D1;&#x9001;&#x6D88;&#x606F;">&#x53D1;&#x9001;&#x6D88;&#x606F;</h4>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <a href="https://hexdocs.pm/elixir/Node.html#spawn_link/2" target="_blank"><code>Node.spawn_link/2</code></a> &#x6765;&#x8BA9; <code>alex</code> &#x8282;&#x70B9;&#x8981;&#x6C42; <code>kate</code> &#x8282;&#x70B9;&#x8FD0;&#x884C; <code>say_name/0</code> &#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-elixir">iex(alex<span class="hljs-variable">@localhost</span>)&gt; Node.spawn_link(<span class="hljs-symbol">:kate</span><span class="hljs-variable">@localhost</span>, <span class="hljs-keyword">fn</span> -&gt; Kate.say_name <span class="hljs-keyword">end</span>)
+Hi, my name is Kate
+<span class="hljs-comment">#PID&lt;10507.132.0&gt;</span>
+</code></pre>
+<h4 id="&#x5173;&#x4E8E;-io-&#x548C;&#x8282;&#x70B9;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x5730;&#x65B9;">&#x5173;&#x4E8E; I/O &#x548C;&#x8282;&#x70B9;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x5730;&#x65B9;</h4>
+<p>&#x6CE8;&#x610F;&#x5230;&#xFF0C;&#x5C3D;&#x7BA1; <code>Kate.say_name/0</code> &#x662F;&#x5728;&#x8FDC;&#x7A0B;&#x8282;&#x70B9;&#x8C03;&#x7528;&#x7684;&#xFF0C;&#x4F46;&#x786E;&#x5B9E;&#x672C;&#x5730;&#xFF0C;&#x6216;&#x8005;&#x8BF4;&#x8C03;&#x7528;&#x8282;&#x70B9;&#x8FD9;&#x91CC;&#x63A5;&#x6536;&#x5230; <code>IO.puts</code> &#x7684;&#x8F93;&#x51FA;&#x3002;</p>
+<p>&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x672C;&#x5730;&#x8282;&#x70B9;&#x662F; <strong>&#x7FA4;&#x7EC4;&#x9886;&#x5BFC;&#x8282;&#x70B9;&#xFF08;group leader&#xFF09;</strong>&#x3002;Erlang &#x865A;&#x62DF;&#x673A;&#x901A;&#x8FC7;&#x8FDB;&#x7A0B;&#x6765;&#x7BA1;&#x7406; I/O&#x3002;&#x8FD9;&#x5C31;&#x4F7F;&#x5F97;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#x8282;&#x70B9;&#x95F4;&#x6267;&#x884C; I/O &#x64CD;&#x4F5C;&#xFF0C;&#x6BD4;&#x5982; <code>IO.puts</code>&#x3002;&#x8FD9;&#x4E9B;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#x8FDB;&#x7A0B;&#x662F;&#x901A;&#x8FC7;&#x7FA4;&#x7EC4;&#x9886;&#x5BFC;&#x8282;&#x70B9;&#x7684; I/O &#x8FDB;&#x7A0B;&#x6765;&#x7BA1;&#x7406;&#x7684;&#x3002;&#x7FA4;&#x7EC4;&#x9886;&#x5BFC;&#x8282;&#x70B9;&#x603B;&#x662F;&#x53D1;&#x8D77;&#x8FDB;&#x7A0B;&#x7684;&#x90A3;&#x4E2A;&#x8282;&#x70B9;&#x3002;</p>
+<p>&#x56E0;&#x4E3A; <code>alex</code> &#x8282;&#x70B9;&#x662F;&#x6211;&#x4EEC;&#x8C03;&#x7528; <code>spawn_link/2</code> &#x51FD;&#x6570;&#x7684;&#x8282;&#x70B9;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x5C31;&#x662F;&#x7FA4;&#x7EC4;&#x9886;&#x5BFC;&#x8282;&#x70B9;&#xFF0C;<code>IO.puts</code> &#x7684;&#x8FD4;&#x56DE;&#x4E5F;&#x4F1A;&#x6307;&#x5411;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x6D41;&#x4E0A;&#x3002;</p>
+<h4 id="&#x56DE;&#x5E94;&#x6D88;&#x606F;">&#x56DE;&#x5E94;&#x6D88;&#x606F;</h4>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x63A5;&#x6536;&#x5230;&#x6D88;&#x606F;&#x7684;&#x8282;&#x70B9;&#x53D1;&#x9001;&#x67D0;&#x4E9B; <strong>&#x56DE;&#x5E94;</strong> &#x5230;&#x53D1;&#x9001;&#x65B9;&#xFF1F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x7684;&#x4F7F;&#x7528; <code>receive/1</code> &#x548C; <a href="https://hexdocs.pm/elixir/Process.html#send/3" target="_blank"><code>send/3</code></a> &#x6765;&#x5B9E;&#x73B0;&#x8FD9;&#x4E00;&#x70B9;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BA9; <code>alex</code> &#x8282;&#x70B9;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x901A;&#x9053;&#x5230; <code>kate</code> &#x8282;&#x70B9;&#xFF0C;&#x5E76;&#x6307;&#x5B9A; <code>kate</code> &#x8282;&#x70B9;&#x8FD0;&#x884C;&#x67D0;&#x4E2A;&#x533F;&#x540D;&#x51FD;&#x6570;&#x3002;&#x8FD9;&#x4E2A;&#x533F;&#x540D;&#x51FD;&#x6570;&#x4F1A;&#x76D1;&#x542C;&#x662F;&#x5426;&#x6536;&#x5230;&#x67D0;&#x4E2A;&#x63CF;&#x8FF0;&#x4E86;&#x7279;&#x5B9A;&#x6D88;&#x606F;&#x548C; <code>alex</code> &#x8282;&#x70B9; PID &#x7684;&#x5143;&#x7EC4;&#x3002;&#x5982;&#x679C;&#x6536;&#x5230;&#x4E86;&#x8FD9;&#x4E2A;&#x5143;&#x7EC4;&#x6D88;&#x606F;&#xFF0C;&#x5B83;&#x5C31;&#x4F1A;&#x901A;&#x8FC7;&#x76F8;&#x5E94;&#x7684; PID &#x56DE;&#x5E94;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x5230; <code>alex</code> &#x8282;&#x70B9;&#x4E0A;&#xFF1A;</p>
+<pre><code class="lang-elixir">iex(alex<span class="hljs-variable">@localhost</span>)&gt; pid = Node.spawn_link <span class="hljs-symbol">:kate</span><span class="hljs-variable">@localhost</span>, <span class="hljs-keyword">fn</span> -&gt;
+...(alex<span class="hljs-variable">@localhost</span>)&gt;   receive <span class="hljs-keyword">do</span>
+...(alex<span class="hljs-variable">@localhost</span>)&gt;     {<span class="hljs-symbol">:hi</span>, alex_node_pid} -&gt; send alex_node_pid, <span class="hljs-symbol">:sup?</span>
+...(alex<span class="hljs-variable">@localhost</span>)&gt;   <span class="hljs-keyword">end</span>
+...(alex<span class="hljs-variable">@localhost</span>)&gt; <span class="hljs-keyword">end</span>
+<span class="hljs-comment">#PID&lt;10467.112.0&gt;</span>
+iex(alex<span class="hljs-variable">@localhost</span>)&gt; pid
+<span class="hljs-comment">#PID&lt;10467.112.0&gt;</span>
+iex(alex<span class="hljs-variable">@localhost</span>)&gt; send(pid, {<span class="hljs-symbol">:hi</span>, <span class="hljs-keyword">self</span>()})
+{<span class="hljs-symbol">:hi</span>, <span class="hljs-comment">#PID&lt;0.106.0&gt;}</span>
+iex(alex<span class="hljs-variable">@localhost</span>)&gt; flush()
+<span class="hljs-symbol">:sup?</span>
+<span class="hljs-symbol">:ok</span>
+</code></pre>
+<h4 id="&#x5173;&#x4E8E;&#x8DE8;&#x7F51;&#x7EDC;&#x95F4;&#x7684;&#x8282;&#x70B9;&#x901A;&#x4FE1;">&#x5173;&#x4E8E;&#x8DE8;&#x7F51;&#x7EDC;&#x95F4;&#x7684;&#x8282;&#x70B9;&#x901A;&#x4FE1;</h4>
+<p>&#x5982;&#x679C;&#x4F60;&#x5E0C;&#x671B;&#x5728;&#x4E0D;&#x540C;&#x7F51;&#x7EDC;&#x95F4;&#x7684;&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x53D1;&#x9001;&#x6D88;&#x606F;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;&#x542F;&#x52A8;&#x547D;&#x540D;&#x8282;&#x70B9;&#x7684;&#x65F6;&#x5019;&#x63D0;&#x4F9B;&#x76F8;&#x540C;&#x7684;&#x4E00;&#x4E2A; cookie&#xFF1A;</p>
+<pre><code class="lang-bash">iex --sname alex@localhost --cookie secret_token
+</code></pre>
+<pre><code class="lang-bash">iex --sname kate@localhost --cookie secret_token
+</code></pre>
+<p>&#x53EA;&#x6709;&#x62FF;&#x7740;&#x76F8;&#x540C; <code>cookie</code> &#x542F;&#x52A8;&#x7684;&#x8282;&#x70B9;&#x624D;&#x80FD;&#x591F;&#x6210;&#x529F;&#x76F8;&#x4E92;&#x901A;&#x4FE1;&#x3002;</p>
+<h4 id="nodespawnlink2-&#x7684;&#x9650;&#x5236;"><code>Node.spawn_link/2</code> &#x7684;&#x9650;&#x5236;</h4>
+<p>&#x867D;&#x7136; <code>Node.spawn_link/2</code> &#x5F88;&#x597D;&#x9610;&#x660E;&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x4EE5;&#x53CA;&#x6211;&#x4EEC;&#x5728;&#x5B83;&#x4EEC;&#x4E4B;&#x95F4;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x4F46;&#x662F;&#xFF0C;&#x5B83; <strong>&#x4E0D;&#x662F;</strong> &#x5728;&#x5206;&#x5E03;&#x5F0F;&#x8282;&#x70B9;&#x4E2D;&#x8FD0;&#x884C;&#x7684;&#x5E94;&#x7528;&#x4E4B;&#x95F4;&#x4F20;&#x9012;&#x6D88;&#x606F;&#x7684;&#x597D;&#x7684;&#x505A;&#x6CD5;&#x3002;<code>Node.spawn_link/2</code> &#x4F1A;&#x521B;&#x5EFA;&#x51FA;&#x72EC;&#x7ACB;&#x7684;&#x8FDB;&#x7A0B;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E0D;&#x53D7;&#x76D1;&#x7BA1;&#x7684;&#x8FDB;&#x7A0B;&#x3002;&#x5982;&#x679C;&#x80FD;&#x6709; <strong>&#x8DE8;&#x8282;&#x70B9;</strong> &#x4E4B;&#x95F4;&#x521B;&#x5EFA;&#x51FA;&#x53D7;&#x76D1;&#x7BA1;&#x7684;&#x5F02;&#x6B65;&#x8FDB;&#x7A0B;&#x7684;&#x8BDD;...</p>
+<h2 id="&#x5206;&#x5E03;&#x5F0F;&#x4EFB;&#x52A1;">&#x5206;&#x5E03;&#x5F0F;&#x4EFB;&#x52A1;</h2>
+<p><a href="https://hexdocs.pm/elixir/master/Task.html#module-distributed-tasks" target="_blank">&#x5206;&#x5E03;&#x5F0F;&#x4EFB;&#x52A1;</a> &#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x5728;&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x521B;&#x5EFA;&#x51FA;&#x53D7;&#x76D1;&#x7BA1;&#x7684;&#x4EFB;&#x52A1;&#x3002;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684; supervisor &#x5E94;&#x7528;&#x6765;&#x5B9E;&#x73B0;&#x5206;&#x5E03;&#x5F0F;&#x4EFB;&#x52A1;&#xFF0C;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x901A;&#x8FC7; <code>iex</code> &#x4F1A;&#x8BDD;&#x6765;&#x5728;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x76F8;&#x4E92;&#x901A;&#x4FE1;&#x3002;</p>
+<h3 id="&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;-supervisor-&#x5E94;&#x7528;">&#x5B9A;&#x4E49;&#x4E00;&#x4E2A; Supervisor &#x5E94;&#x7528;</h3>
+<p>&#x751F;&#x6210;&#x5E94;&#x7528;&#xFF1A;</p>
+<pre><code>mix new chat --sup
+</code></pre><h3 id="&#x628A;-task-suppervisor-&#x52A0;&#x5165;&#x5230;-supervision-tree">&#x628A; Task Suppervisor &#x52A0;&#x5165;&#x5230; Supervision Tree</h3>
+<p>Task Supervisor &#x52A8;&#x6001;&#x76D1;&#x7BA1;&#x4EFB;&#x52A1;&#x3002;&#x5B83;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#x5E76;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x5B50;&#x8FDB;&#x7A0B;&#xFF0C;&#x901A;&#x5E38;&#x53EA;&#x662F;&#x5728;&#x81EA;&#x5DF1;&#x7684; supervisor <strong>&#x76D1;&#x7BA1;&#x4E4B;&#x4E0B;</strong>&#x3002;&#x540E;&#x9762;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BA9;&#x5B83;&#x76D1;&#x7BA1;&#x4EFB;&#x4F55;&#x6570;&#x91CF;&#x7684;&#x5B50;&#x4EFB;&#x52A1;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x4F1A;&#x628A; Task Supervisor &#x6DFB;&#x52A0;&#x5230;&#x6211;&#x4EEC;&#x5E94;&#x7528;&#x7684; supervision tree &#x91CC;&#x9762;&#xFF0C;&#x5E76;&#x4E14;&#x547D;&#x540D;&#x4E3A; <code>Chat.TaskSupervisor</code>&#x3002;</p>
+<pre><code class="lang-elixir"><span class="hljs-comment"># lib/chat/application.ex</span>
+<span class="hljs-class"><span class="hljs-keyword">defmodule</span> <span class="hljs-title">Chat</span></span>.Application <span class="hljs-keyword">do</span>
+  <span class="hljs-variable">@moduledoc</span> <span class="hljs-keyword">false</span>
+
+  <span class="hljs-keyword">use</span> Application
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">start</span></span>(_type, _args) <span class="hljs-keyword">do</span>
+    children = [
+      {Task.Supervisor, <span class="hljs-symbol">name:</span> Chat.TaskSupervisor}
+    ]
+
+    opts = [<span class="hljs-symbol">strategy:</span> <span class="hljs-symbol">:one_for_one</span>, <span class="hljs-symbol">name:</span> Chat.Supervisor]
+    Supervisor.start_link(children, opts)
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x8FD9;&#x6837;&#xFF0C;&#x65E0;&#x8BBA;&#x6211;&#x4EEC;&#x7684;&#x5E94;&#x7528;&#x5728;&#x54EA;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x542F;&#x52A8;&#xFF0C;<code>Chat.Supervisor</code> &#x5C31;&#x4F1A;&#x8FD0;&#x884C;&#x5E76;&#x968F;&#x65F6;&#x51C6;&#x5907;&#x76D1;&#x7BA1;&#x4EFB;&#x52A1;&#x3002;</p>
+<h3 id="&#x4F7F;&#x7528;&#x53D7;&#x76D1;&#x7BA1;&#x7684;&#x4EFB;&#x52A1;&#x53D1;&#x9001;&#x6D88;&#x606F;">&#x4F7F;&#x7528;&#x53D7;&#x76D1;&#x7BA1;&#x7684;&#x4EFB;&#x52A1;&#x53D1;&#x9001;&#x6D88;&#x606F;</h3>
+<p>&#x6211;&#x4EEC;&#x4F1A;&#x4F7F;&#x7528; <a href="https://hexdocs.pm/elixir/master/Task.Supervisor.html#async/5" target="_blank"><code>Task.Supervisor.async/5</code></a> &#x51FD;&#x6570;&#x6765;&#x542F;&#x52A8;&#x76D1;&#x7BA1;&#x4EFB;&#x52A1;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x9700;&#x8981;&#x56DB;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;</p>
+<ul>
+<li>&#x6211;&#x4EEC;&#x60F3;&#x7528;&#x6765;&#x76D1;&#x7BA1;&#x4EFB;&#x52A1;&#x7684; supervisor&#x3002;&#x4E3A;&#x4E86;&#x8BA9;&#x8FDC;&#x7A0B;&#x8282;&#x70B9;&#x6765;&#x76D1;&#x7BA1;&#x4EFB;&#x52A1;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F20;&#x5165;&#x4E00;&#x4E2A; <code>{SupervisorName, remote_node_name}</code> &#x7684;&#x5143;&#x7EC4;&#x3002;  </li>
+<li>&#x8981;&#x6267;&#x884C;&#x7684;&#x51FD;&#x6570;&#x6240;&#x5728;&#x7684;&#x6A21;&#x5757;&#x540D;  </li>
+<li>&#x8981;&#x6267;&#x884C;&#x7684;&#x51FD;&#x6570;&#x540D;  </li>
+<li>&#x4EFB;&#x4F55;&#x9700;&#x8981;&#x4F20;&#x5165;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;  </li>
+</ul>
+<p>&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x4F20;&#x5165;&#x7B2C;&#x4E94;&#x4E2A;&#xFF0C;&#x53EF;&#x9009;&#x7684;&#x53C2;&#x6570;&#x6765;&#x8BBE;&#x7F6E; shutdown &#x9009;&#x9879;&#x3002;&#x4E0D;&#x8FC7;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x6682;&#x65F6;&#x4E0D;&#x8003;&#x8651;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x7684; Chat &#x5E94;&#x7528;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x3002;&#x5B83;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x5230;&#x8FDC;&#x7A0B;&#x8282;&#x70B9;&#xFF0C;&#x7136;&#x540E;&#x8FDC;&#x7A0B;&#x8282;&#x70B9;&#x901A;&#x8FC7; <code>IO.puts</code> &#x7684;&#x65B9;&#x5F0F;&#x6765;&#x7ED9;&#x4E88;&#x76F8;&#x5E94;&#xFF0C;&#x901A;&#x8FC7;&#x8FDC;&#x7A0B;&#x8282;&#x70B9;&#x7684;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x3002;</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x6211;&#x4EEC;&#x6765;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;<code>Chat.receive_message/1</code>&#x3002;&#x8FD9;&#x662F;&#x6211;&#x4EEC;&#x8981;&#x5728;&#x8FDC;&#x7A0B;&#x8282;&#x70B9;&#x8FD0;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#x3002;</p>
+<pre><code class="lang-elixir"><span class="hljs-comment"># lib/chat.ex</span>
+<span class="hljs-class"><span class="hljs-keyword">defmodule</span> <span class="hljs-title">Chat</span></span> <span class="hljs-keyword">do</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">receive_message</span></span>(message) <span class="hljs-keyword">do</span>
+    IO.puts message
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x7136;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8BA9; <code>Chat</code> &#x6A21;&#x5757;&#x61C2;&#x5F97;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x53D7;&#x76D1;&#x7BA1;&#x7684;&#x4EFB;&#x52A1;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x5230;&#x4E00;&#x4E2A;&#x8FDC;&#x7A0B;&#x7684;&#x8282;&#x70B9;&#x3002;&#x6211;&#x4EEC;&#x518D;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5; <code>Chat.send_message/2</code> &#x6765;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#xFF1A;</p>
+<pre><code class="lang-elixir"><span class="hljs-comment"># lib/chat.ex</span>
+<span class="hljs-class"><span class="hljs-keyword">defmodule</span> <span class="hljs-title">Chat</span></span> <span class="hljs-keyword">do</span>
+  ...
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">send_message</span></span>(recipient, message) <span class="hljs-keyword">do</span>
+    spawn_task(__MODULE_<span class="hljs-number">_</span>, <span class="hljs-symbol">:receive_message</span>, recipient, [message])
+  <span class="hljs-keyword">end</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">spawn_task</span></span>(<span class="hljs-keyword">module</span>, fun, recipient, args) <span class="hljs-keyword">do</span>
+    recipient
+    |&gt; remote_supervisor()
+    |&gt; Task.Supervisor.async(<span class="hljs-keyword">module</span>, fun, args)
+    |&gt; Task.await()
+  <span class="hljs-keyword">end</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">defp</span> <span class="hljs-title">remote_supervisor</span></span>(recipient) <span class="hljs-keyword">do</span>
+    {Chat.TaskSupervisor, recipient}
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x8FD0;&#x884C;&#x4E00;&#x4E0B;&#x770B;&#x770B;&#x3002;</p>
+<p>&#x5728;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x884C;&#x7A97;&#x53E3;&#xFF0C;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x547D;&#x540D;&#x7684; <code>iex</code> &#x4F1A;&#x8BDD;&#x6765;&#x542F;&#x52A8;&#x6211;&#x4EEC;&#x7684; chat &#x5E94;&#x7528;&#x3002;</p>
+<pre><code class="lang-bash">iex --sname alex@localhost -S mix
+</code></pre>
+<p>&#x6253;&#x5F00;&#x53E6;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x884C;&#x7A97;&#x53E3;&#xFF0C;&#x542F;&#x52A8;&#x53E6;&#x4E00;&#x4E2A;&#x547D;&#x540D;&#x7684;&#x8282;&#x70B9;&#x548C;&#x5E94;&#x7528;&#xFF1A;</p>
+<pre><code class="lang-bash">iex --sname kate@localhost -S mix
+</code></pre>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x901A;&#x8FC7; <code>alex</code> &#x8282;&#x70B9;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x5230; <code>kate</code> &#x8282;&#x70B9;&#xFF1A;</p>
+<pre><code class="lang-elixir">iex(alex<span class="hljs-variable">@localhost</span>)&gt; Chat.send_message(<span class="hljs-symbol">:kate</span><span class="hljs-variable">@localhost</span>, <span class="hljs-string">&quot;hi&quot;</span>)
+<span class="hljs-symbol">:ok</span>
+</code></pre>
+<p>&#x5207;&#x6362;&#x5230; <code>kate</code> &#x7A97;&#x53E3;&#xFF0C;&#x4F60;&#x4F1A;&#x770B;&#x5230;&#x8FD9;&#x6761;&#x6D88;&#x606F;&#xFF1A;</p>
+<pre><code class="lang-elixir">iex(kate<span class="hljs-variable">@localhost</span>)&gt; hi
+</code></pre>
+<p><code>kate</code> &#x8282;&#x70B9;&#x4E5F;&#x53EF;&#x4EE5;&#x56DE;&#x5E94; <code>alex</code> &#x8282;&#x70B9;&#xFF1A;</p>
+<pre><code class="lang-elixir">iex(kate<span class="hljs-variable">@localhost</span>)&gt; hi
+Chat.send_message(<span class="hljs-symbol">:alex</span><span class="hljs-variable">@localhost</span>, <span class="hljs-string">&quot;how are you?&quot;</span>)
+<span class="hljs-symbol">:ok</span>
+iex(kate<span class="hljs-variable">@localhost</span>)&gt;
+</code></pre>
+<p>&#x540C;&#x6837;&#xFF0C;&#x5728; <code>alex</code> &#x8282;&#x70B9;&#x7684; <code>iex</code> &#x4F1A;&#x8BDD;&#x4F1A;&#x51FA;&#x73B0;&#xFF1A;</p>
+<pre><code class="lang-elixir">iex(alex<span class="hljs-variable">@localhost</span>)&gt; how are you?
+</code></pre>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x56DE;&#x987E;&#x6211;&#x4EEC;&#x7684;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#xFF0C;&#x5E76;&#x6DF1;&#x5165;&#x5206;&#x6790;&#x6BCF;&#x4E00;&#x6B65;&#x5230;&#x5E95;&#x53D1;&#x751F;&#x4E86;&#x4EC0;&#x4E48;&#x3002;</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x51FD;&#x6570; <code>Chat.send_message/2</code> &#x63A5;&#x6536;&#x4E86;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;&#x8981;&#x8FD0;&#x884C;&#x76D1;&#x7BA1;&#x4EFB;&#x52A1;&#x7684;&#x8FDC;&#x7A0B;&#x8282;&#x70B9;&#x540D;&#xFF0C;&#x548C;&#x8981;&#x53D1;&#x9001;&#x7684;&#x6D88;&#x606F;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x4E86; <code>spawn_task/4</code> &#x51FD;&#x6570;&#xFF0C;&#x4E5F;&#x5C31;&#x5728;&#x76F8;&#x5E94;&#x7684;&#x8282;&#x70B9;&#x542F;&#x52A8;&#x8FD0;&#x884C;&#x4E86;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x4EFB;&#x52A1;&#xFF0C;&#x540C;&#x65F6;&#x53D7;&#x5230;&#x8FDC;&#x7A0B;&#x8282;&#x70B9;&#x7684; <code>Chat.TaskSupervisor</code> &#x76D1;&#x7BA1;&#x3002;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#xFF0C;&#x540D;&#x4E3A; <code>Chat.TaskSupervisor</code> &#x7684; Task Supervisor &#x8FD0;&#x884C;&#x5728;&#x90A3;&#x4E2A;&#x8FDC;&#x7A0B;&#x8282;&#x70B9;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x5728;&#x6211;&#x4EEC;&#x7684; Chat &#x5E94;&#x7528;&#x5B9E;&#x4F8B; <strong>&#x4E5F;</strong> &#x5728;&#x90A3;&#x4E2A;&#x8282;&#x70B9;&#x91CC;&#x9762;&#x8FD0;&#x884C;&#xFF0C;&#x5E76;&#x4E14; <code>Chat.TaskSupervisor</code> &#x4E5F;&#x4F5C;&#x4E3A; supervision tree &#x7684;&#x4E00;&#x90E8;&#x5206;&#x5728;&#x8FD0;&#x884C;&#x7740;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x8BA9; <code>Chat.TaskSupervisor</code> &#x76D1;&#x7BA1;&#x7684;&#x4EFB;&#x52A1;&#x662F;&#x8D1F;&#x8D23;&#x6267;&#x884C; <code>Chat.receive_message</code> &#x51FD;&#x6570;&#x3002;&#x5176;&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x662F; <code>send_message/2</code> &#x63A5;&#x6536;&#x7684;&#x4EFB;&#x4F55;&#x6D88;&#x606F;&#xFF0C;&#x518D;&#x7ECF; <code>spawn_task/4</code> &#x4F20;&#x9012;&#x8FC7;&#x6765;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#xFF0C;<code>Chat.receive_message(&quot;hi&quot;)</code> &#x662F;&#x5728;&#x8FDC;&#x7A0B;&#x8282;&#x70B9; <code>kate</code> &#x8C03;&#x7528;&#x7684;&#x3002;&#x90A3;&#x4E48;&#xFF0C;&#x6D88;&#x606F; <code>&quot;hi&quot;</code> &#x4E5F;&#x5C31;&#x663E;&#x793A;&#x5728;&#x90A3;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x4E0A;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x56E0;&#x4E3A;&#x4EFB;&#x52A1;&#x662F;&#x88AB;&#x8FDC;&#x7A0B;&#x8282;&#x70B9;&#x76D1;&#x7BA1;&#xFF0C;&#x6240;&#x4EE5;&#x90A3;&#x4E2A;&#x8282;&#x70B9;&#x4E5F;&#x5C31;&#x6210;&#x4E3A;&#x8FD9;&#x6B21; IO &#x8FDB;&#x7A0B;&#x7684;&#x7FA4;&#x7EC4;&#x9886;&#x5BFC;&#x8282;&#x70B9;&#x3002;</p>
+<h3 id="&#x56DE;&#x5E94;&#x8FDC;&#x7A0B;&#x8282;&#x70B9;&#x53D1;&#x9001;&#x8FC7;&#x6765;&#x7684;&#x6D88;&#x606F;">&#x56DE;&#x5E94;&#x8FDC;&#x7A0B;&#x8282;&#x70B9;&#x53D1;&#x9001;&#x8FC7;&#x6765;&#x7684;&#x6D88;&#x606F;</h3>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x628A;&#x8FD9;&#x4E2A; Chat &#x5E94;&#x7528;&#x53D8;&#x5F97;&#x66F4;&#x667A;&#x80FD;&#x4E00;&#x4E9B;&#x5427;&#x3002;</p>
+<p>&#x76EE;&#x524D;&#xFF0C;&#x4EFB;&#x4F55;&#x4EBA;&#x90FD;&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x4E2A;&#x547D;&#x540D;&#x7684; <code>iex</code> &#x4F1A;&#x8BDD;&#x8FD0;&#x884C;&#x8FD9;&#x4E2A;&#x5E94;&#x7528;&#xFF0C;&#x5F00;&#x59CB;&#x804A;&#x5929;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#x4E00;&#x76F4;&#x4E2D;&#x578B;&#x767D;&#x8272;&#xFF0C;&#x540D;&#x4E3A; Moebi &#x7684;&#x72D7;&#x4E5F;&#x5E0C;&#x671B;&#x80FD;&#x53C2;&#x4E0E;&#x8FDB;&#x6765;&#x3002;Moebi &#x5E0C;&#x671B;&#x80FD;&#x52A0;&#x5165; Chat &#x5E94;&#x7528;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x60DC;&#x7684;&#x662F;&#x5B83;&#x4E0D;&#x61C2;&#x5F97;&#x5982;&#x4F55;&#x6253;&#x5B57;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x662F;&#x4E00;&#x53EA;&#x72D7;&#x561B;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x5E0C;&#x671B; <code>Chat</code> &#x6A21;&#x5757;&#x80FD;&#x5E2E; Moebi &#x56DE;&#x590D;&#x4EFB;&#x4F55;&#x53D1;&#x9001;&#x5230; <code>moebi@localhost</code> &#x8282;&#x70B9;&#x7684;&#x6D88;&#x606F;&#x3002;&#x65E0;&#x8BBA;&#x4F60;&#x5BF9; Moebi &#x8BF4;&#x4EC0;&#x4E48;&#xFF0C;&#x5B83;&#x603B;&#x662F;&#x56DE;&#x590D; <code>&quot;chicken?&quot;</code>&#x3002;&#x56E0;&#x4E3A;&#x5B83;&#x7684;&#x552F;&#x4E00;&#x5E0C;&#x671B;&#x5C31;&#x662F;&#x80FD;&#x5403;&#x9E21;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x6765;&#x5B9A;&#x4E49;&#x53E6;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#x7684; <code>send_message/2</code> &#x51FD;&#x6570;&#xFF0C;&#x8BA9;&#x5B83;&#x80FD;&#x6A21;&#x5F0F;&#x5339;&#x914D; <code>recipient</code> &#x53C2;&#x6570;&#x3002;&#x5982;&#x679C;&#x63A5;&#x6536;&#x65B9;&#x662F; <code>:moebi@locahost</code>&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x4F1A;&#xFF1A;</p>
+<ul>
+<li>&#x901A;&#x8FC7; <code>Node.self()</code> &#x6765;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x540D;&#x5B57;  </li>
+<li>&#x628A;&#x5F53;&#x524D;&#x8282;&#x70B9;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6D88;&#x606F;&#x53D1;&#x9001;&#x65B9;&#xFF0C;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x4F20;&#x5230;&#x65B0;&#x7684;&#x51FD;&#x6570; <code>receive_message_for_moebi/2</code>&#xFF0C;&#x4F7F;&#x5F97;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7ED9;&#x5B83; <strong>&#x8FD4;&#x56DE;</strong> &#x6D88;&#x606F;&#x3002;</li>
+</ul>
+<pre><code class="lang-elixir"><span class="hljs-comment"># lib/chat.ex</span>
+...
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">send_message</span></span>(<span class="hljs-symbol">:moebi</span><span class="hljs-variable">@localhost</span>, message) <span class="hljs-keyword">do</span>
+  spawn_task(__MODULE_<span class="hljs-number">_</span>, <span class="hljs-symbol">:receive_message_for_moebi</span>, <span class="hljs-symbol">:moebi</span><span class="hljs-variable">@localhost</span>, [message, Node.<span class="hljs-keyword">self</span>()])
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x51FD;&#x6570; <code>receive_message_for_moebi/2</code>&#xFF0C;&#x5728;&#x4F7F;&#x7528; <code>IO.puts</code> &#x5728; <code>moebi</code> &#x8282;&#x70B9;&#x7684;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x6253;&#x5370;&#x6D88;&#x606F;&#x7684;&#x540C;&#x65F6;&#xFF0C;<em>&#x4E5F;</em> &#x628A;&#x6D88;&#x606F;&#x8FD4;&#x56DE;&#x7ED9;&#x53D1;&#x9001;&#x65B9;&#xFF1A;</p>
+<pre><code class="lang-elixir"><span class="hljs-comment"># lib/chat.ex</span>
+...
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">receive_message_for_moebi</span></span>(message, from) <span class="hljs-keyword">do</span>
+  IO.puts message
+  send_message(from, <span class="hljs-string">&quot;chicken?&quot;</span>)
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x901A;&#x8FC7;&#x8C03;&#x7528; <code>send_message/2</code> &#x51FD;&#x6570;&#x5E76;&#x4F20;&#x5165;&#x539F;&#x59CB;&#x6D88;&#x606F;&#x53D1;&#x9001;&#x65B9;&#x7684;&#x8282;&#x70B9;&#x540D;&#x79F0;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x8BA9; <strong>&#x8FDC;&#x7A0B;&#x7684;</strong> &#x8282;&#x70B9;&#x5728;&#x90A3;&#x8FB9;&#x521B;&#x5EFA;&#x51FA;&#x4E00;&#x4E2A;&#x53D7;&#x76D1;&#x7BA1;&#x7684;&#x4EFB;&#x52A1;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x770B;&#x5B9E;&#x9645;&#x6548;&#x679C;&#x3002;&#x5728;&#x4E09;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x7A97;&#x53E3;&#xFF0C;&#x542F;&#x52A8;&#x4E09;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x547D;&#x540D;&#x8282;&#x70B9;&#xFF1A;</p>
+<pre><code class="lang-bash">iex --sname alex@localhost -S mix
+</code></pre>
+<pre><code class="lang-bash">iex --sname kate@localhost -S mix
+</code></pre>
+<pre><code class="lang-bash">iex --sname moebi@localhost -S mix
+</code></pre>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x8BF7; <code>alex</code> &#x53D1;&#x9001;&#x6D88;&#x606F;&#x7ED9; <code>moebi</code>&#xFF1A;</p>
+<pre><code class="lang-elixir">iex(alex<span class="hljs-variable">@localhost</span>)&gt; Chat.send_message(<span class="hljs-symbol">:moebi</span><span class="hljs-variable">@localhost</span>, <span class="hljs-string">&quot;hi&quot;</span>)
+chicken?
+<span class="hljs-symbol">:ok</span>
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;<code>alex</code> &#x8282;&#x70B9;&#x6536;&#x5230;&#x4E86;&#x56DE;&#x5E94;&#xFF0C;<code>&quot;chicken?&quot;</code>&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x67E5;&#x770B; <code>kate</code> &#x8282;&#x70B9;&#xFF0C;&#x5B83;&#x6CA1;&#x6709;&#x6536;&#x5230;&#x4EFB;&#x4F55;&#x6D88;&#x606F;&#xFF0C;&#x56E0;&#x4E3A; <code>alex</code> &#x548C; <code>moebi</code> &#x90FD;&#x6CA1;&#x6709;&#x7ED9;&#x5979;&#x53D1;&#x9001;&#x6D88;&#x606F;&#xFF08;&#x5BF9;&#x4E0D;&#x8D77;&#xFF0C;<code>kate</code>&#xFF09;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x67E5;&#x770B; <code>moebi</code> &#x8282;&#x70B9;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x7A97;&#x53E3;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x770B;&#x5230; <code>alex</code> &#x8282;&#x70B9;&#x53D1;&#x9001;&#x8FC7;&#x6765;&#x7684;&#x6D88;&#x606F;&#xFF1A;</p>
+<pre><code class="lang-elixir">iex(moebi<span class="hljs-variable">@localhost</span>)&gt; hi
+</code></pre>
+<h2 id="&#x6D4B;&#x8BD5;&#x5206;&#x5E03;&#x5F0F;&#x4EE3;&#x7801;">&#x6D4B;&#x8BD5;&#x5206;&#x5E03;&#x5F0F;&#x4EE3;&#x7801;</h2>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x7ED9;&#x6211;&#x4EEC;&#x7684; <code>send_message</code> &#x51FD;&#x6570;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x5427;&#x3002;</p>
+<pre><code class="lang-elixir"><span class="hljs-comment"># test/chat_test.ex</span>
+<span class="hljs-class"><span class="hljs-keyword">defmodule</span> <span class="hljs-title">ChatTest</span></span> <span class="hljs-keyword">do</span>
+  <span class="hljs-keyword">use</span> ExUnit.Case, <span class="hljs-symbol">async:</span> <span class="hljs-keyword">true</span>
+  doctest Chat
+
+  test <span class="hljs-string">&quot;send_message&quot;</span> <span class="hljs-keyword">do</span>
+    assert Chat.send_message(<span class="hljs-symbol">:moebi</span><span class="hljs-variable">@localhost</span>, <span class="hljs-string">&quot;hi&quot;</span>) == <span class="hljs-symbol">:ok</span>
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x901A;&#x8FC7; <code>mix test</code> &#x8FD0;&#x884C;&#x8FD9;&#x4E2A;&#x6D4B;&#x8BD5;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x770B;&#x5230;&#x4EE5;&#x4E0B;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF1A;</p>
+<pre><code class="lang-elixir">** (exit) exited <span class="hljs-symbol">in:</span> GenServer.call({Chat.TaskSupervisor, <span class="hljs-symbol">:moebi</span><span class="hljs-variable">@localhost</span>}, {<span class="hljs-symbol">:start_task</span>, [<span class="hljs-comment">#PID&lt;0.158.0&gt;, :monitor, {:sophie@localhost, #PID&lt;0.158.0&gt;}, {Chat, :receive_message_for_moebi, [&quot;hi&quot;, :sophie@localhost]}], :temporary, nil}, :infinity)</span>
+         ** (EXIT) no connection to moebi<span class="hljs-variable">@localhost</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x592A;&#x6B63;&#x5E38;&#x4E0D;&#x8FC7;&#x4E86; &#x2014;&#x2014; &#x6211;&#x4EEC;&#x600E;&#x4E48;&#x53EF;&#x80FD;&#x8FDE;&#x63A5;&#x5230;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; <code>moebi@localhost</code> &#x7684;&#x8282;&#x70B9;&#x5462;&#xFF1F;&#x56E0;&#x4E3A;&#x6839;&#x672C;&#x6CA1;&#x6709;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x5728;&#x8FD0;&#x884C;&#x554A;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x51E0;&#x4E2A;&#x6B65;&#x9AA4;&#x6765;&#x8BA9;&#x8FD9;&#x4E2A;&#x6D4B;&#x8BD5;&#x5F97;&#x4EE5;&#x901A;&#x8FC7;&#xFF1A;</p>
+<ul>
+<li>&#x6253;&#x5F00;&#x53E6;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x884C;&#x7A97;&#x53E3;&#xFF0C;&#x8FD0;&#x884C;&#x547D;&#x4EE4; <code>iex --sname moebi@localhost -S mix</code> &#x6765;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x547D;&#x540D;&#x7684;&#x8282;&#x70B9;  </li>
+<li>&#x56DE;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x884C;&#x7A97;&#x53E3;&#xFF0C;&#x901A;&#x8FC7;&#x4E00;&#x4E2A; <code>iex</code> &#x4F1A;&#x8BDD;&#x6765;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x547D;&#x540D;&#x7684;&#x51E0;&#x70B9;&#x5E76;&#x8FD0;&#x884C;&#x8FD9;&#x4E2A;&#x6D4B;&#x8BD5;&#xFF1A;<code>iex --sname sophie@localhost -S mix test</code>  </li>
+</ul>
+<p>&#x663E;&#x7136;&#xFF0C;&#x8FD9;&#x4E48;&#x9EBB;&#x70E6;&#xFF0C;&#x800C;&#x4E14;&#x8FD9;&#x7EDD;&#x5BF9;&#x4E0D;&#x80FD;&#x7B97;&#x662F;&#x81EA;&#x52A8;&#x5316;&#x6D4B;&#x8BD5;&#x7684;&#x8FC7;&#x7A0B;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x6709;&#x4E24;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x9009;&#x62E9;&#xFF1A;</p>
+<ol>
+<li><p>&#x9009;&#x62E9;&#x6027;&#x7684;&#x6392;&#x9664;&#x6389;&#x4E00;&#x4E9B;&#x9700;&#x8981;&#x5206;&#x5E03;&#x5F0F;&#x8282;&#x70B9;&#x7684;&#x6D4B;&#x8BD5;&#xFF0C;&#x5982;&#x679C;&#x76F8;&#x5E94;&#x7684;&#x8282;&#x70B9;&#x6CA1;&#x6709;&#x5728;&#x8FD0;&#x884C;&#x7684;&#x8BDD;&#x3002;</p>
+</li>
+<li><p>&#x901A;&#x8FC7;&#x914D;&#x7F6E;&#x4F60;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x907F;&#x514D;&#x5728;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#x521B;&#x5EFA;&#x4EFB;&#x52A1;&#x5230;&#x8FDC;&#x7A0B;&#x8282;&#x70B9;&#x3002;</p>
+</li>
+</ol>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x770B;&#x7B2C;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x600E;&#x4E48;&#x5904;&#x7406;&#x3002;</p>
+<h3 id="&#x901A;&#x8FC7;&#x6807;&#x7B7E;&#x6765;&#x9009;&#x62E9;&#x6027;&#x7684;&#x6392;&#x9664;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;">&#x901A;&#x8FC7;&#x6807;&#x7B7E;&#x6765;&#x9009;&#x62E9;&#x6027;&#x7684;&#x6392;&#x9664;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;</h3>
+<p>&#x6211;&#x4EEC;&#x9700;&#x8981;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A; <code>ExUnit</code> tag &#x5230;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x4E4B;&#x4E0A;&#xFF1A;</p>
+<pre><code class="lang-elixir"><span class="hljs-comment">#test/chat_test.ex</span>
+<span class="hljs-class"><span class="hljs-keyword">defmodule</span> <span class="hljs-title">ChatTest</span></span> <span class="hljs-keyword">do</span>
+  <span class="hljs-keyword">use</span> ExUnit.Case, <span class="hljs-symbol">async:</span> <span class="hljs-keyword">true</span>
+  doctest Chat
+
+  <span class="hljs-variable">@tag</span> <span class="hljs-symbol">:distributed</span>
+  test <span class="hljs-string">&quot;send_message&quot;</span> <span class="hljs-keyword">do</span>
+    assert Chat.send_message(<span class="hljs-symbol">:moebi</span><span class="hljs-variable">@localhost</span>, <span class="hljs-string">&quot;hi&quot;</span>) == <span class="hljs-symbol">:ok</span>
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x7136;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x6D4B;&#x8BD5;&#x7684; helper &#x6A21;&#x5757;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x6761;&#x4EF6;&#x903B;&#x8F91;&#xFF0C;&#x4F7F;&#x5F97;&#x90A3;&#x4E9B;&#x62E5;&#x6709;&#x7279;&#x5B9A;&#x6807;&#x7B7E;&#x7684;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#xFF0C;&#x5F53;&#x4E0D;&#x662F;&#x8FD0;&#x884C;&#x5728;&#x4E00;&#x4E2A;&#x547D;&#x540D;&#x7684;&#x8282;&#x70B9;&#x7684;&#x65F6;&#x4FAF;&#xFF0C;&#x88AB;&#x6392;&#x9664;&#x5728;&#x5916;&#x3002;</p>
+<pre><code class="lang-elixir">exclude =
+  if Node.alive?, <span class="hljs-symbol">do:</span> [], <span class="hljs-symbol">else:</span> [<span class="hljs-symbol">distributed:</span> <span class="hljs-keyword">true</span>]
+
+ExUnit.start(<span class="hljs-symbol">exclude:</span> exclude)
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <a href="https://hexdocs.pm/elixir/Node.html#alive?/0" target="_blank"><code>Node.alive?</code></a> &#x6765;&#x68C0;&#x67E5;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x662F;&#x4E0D;&#x662F;&#x8FD0;&#x884C;&#x4E2D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x662F;&#x5426;&#x5728;&#x4E00;&#x4E2A;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#x7CFB;&#x7EDF;&#x4E2D;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BA9; <code>ExUnit</code> &#x6765;&#x8DF3;&#x8FC7;&#x6253;&#x4E0A;&#x4E86; <code>distributed: true</code> &#x6807;&#x7B7E;&#x7684;&#x6D4B;&#x8BD5;&#x3002;&#x53CD;&#x4E4B;&#xFF0C;&#x5219;&#x4E0D;&#x9700;&#x8981;&#x6392;&#x9664;&#x90A3;&#x4E9B;&#x6D4B;&#x8BD5;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x8FD0;&#x884C; <code>mix test</code>&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x4F1A;&#x770B;&#x5230;&#xFF1A;</p>
+<pre><code class="lang-bash">mix <span class="hljs-built_in">test</span>
+Excluding tags: [distributed: <span class="hljs-literal">true</span>]
+
+Finished <span class="hljs-keyword">in</span> 0.02 seconds
+1 <span class="hljs-built_in">test</span>, 0 failures, 1 excluded
+</code></pre>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x8FD0;&#x884C;&#x90A3;&#x4E9B;&#x5206;&#x5E03;&#x5F0F;&#x6D4B;&#x8BD5;&#xFF0C;&#x6211;&#x4EEC;&#x4EC5;&#x4EC5;&#x9700;&#x8981;&#x6309;&#x7167;&#x4E0A;&#x9762;&#x5217;&#x51FA;&#x6765;&#x7684;&#x6B65;&#x9AA4;&#xFF1A;&#x8FD0;&#x884C; <code>moebi@localhost</code> &#x8282;&#x70B9;&#xFF0C;<strong>&#x5E76;&#x4E14;</strong> &#x901A;&#x8FC7; <code>iex</code> &#x6765;&#x5728;&#x4E00;&#x4E2A;&#x547D;&#x540D;&#x7684;&#x8282;&#x70B9;&#x4E2D;&#x8FD0;&#x884C;&#x6D4B;&#x8BD5;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x770B;&#x53E6;&#x4E00;&#x79CD;&#x6D4B;&#x8BD5;&#x65B9;&#x5F0F; &#x2014;&#x2014; &#x914D;&#x7F6E;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4F7F;&#x5F97;&#x5B83;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x73AF;&#x5883;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x8868;&#x73B0;&#x884C;&#x4E3A;&#x3002;</p>
+<h3 id="&#x5E94;&#x7528;&#x7684;&#x7279;&#x5B9A;&#x73AF;&#x5883;&#x914D;&#x7F6E;">&#x5E94;&#x7528;&#x7684;&#x7279;&#x5B9A;&#x73AF;&#x5883;&#x914D;&#x7F6E;</h3>
+<p>&#x6211;&#x4EEC;&#x90A3;&#x4E9B;&#x8BA9; <code>Task.Supervisor</code> &#x5728;&#x8FDC;&#x7A0B;&#x8282;&#x70B9;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x53D7;&#x76D1;&#x7BA1;&#x7684;&#x4EFB;&#x52A1;&#x7684;&#x4EE3;&#x7801;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-elixir"><span class="hljs-comment"># app/chat.ex</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">spawn_task</span></span>(<span class="hljs-keyword">module</span>, fun, recipient, args) <span class="hljs-keyword">do</span>
+  recipient
+  |&gt; remote_supervisor()
+  |&gt; Task.Supervisor.async(<span class="hljs-keyword">module</span>, fun, args)
+  |&gt; Task.await()
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-function"><span class="hljs-keyword">defp</span> <span class="hljs-title">remote_supervisor</span></span>(recipient) <span class="hljs-keyword">do</span>
+  {Chat.TaskSupervisor, recipient}
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p><code>Task.Supervisor.async/5</code> &#x63A5;&#x6536;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x4F7F;&#x7528;&#x7684; supervisor&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#x662F; <code>{SupervisorName, location}</code> &#x8FD9;&#x79CD;&#x683C;&#x5F0F;&#x7684;&#x5143;&#x7EC4;&#xFF0C;&#x5B83;&#x5C31;&#x4F1A;&#x5728;&#x7ED9;&#x5B9A;&#x7684;&#x8282;&#x70B9;&#x8FD0;&#x884C;&#x8FD9;&#x4E2A; supervisor&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x4F20;&#x5165; <code>Task.Supervisor</code> &#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4EC5;&#x4EC5;&#x53EA;&#x662F; supervisor &#x7684;&#x540D;&#x5B57;&#xFF0C;&#x5B83;&#x5C31;&#x4F1A;&#x5728;&#x672C;&#x5730;&#x7684; supervisor &#x6765;&#x76D1;&#x7BA1;&#x8FD9;&#x4E2A;&#x4EFB;&#x52A1;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x628A; <code>remote_supervisor/1</code> &#x51FD;&#x6570;&#x6539;&#x9020;&#x6210;&#x57FA;&#x4E8E;&#x73AF;&#x5883;&#x7684;&#x53EF;&#x914D;&#x7F6E;&#x5316;&#x3002;&#x5728;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#xFF0C;&#x5B83;&#x5C31;&#x8FD4;&#x56DE; <code>{Chat.TaskSupervisor, recipient}</code>&#xFF0C;&#x5728;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#xFF0C;&#x5B83;&#x5C31;&#x8FD4;&#x56DE; <code>Chat.TaskSupervisor</code>&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x5E94;&#x7528;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#xFF0C;<code>config/dev.exs</code>&#xFF0C;&#x7136;&#x540E;&#x52A0;&#x5165;&#xFF1A;</p>
+<pre><code class="lang-elixir"><span class="hljs-comment"># config/dev.exs</span>
+<span class="hljs-keyword">use</span> Mix.Config
+config <span class="hljs-symbol">:chat</span>, <span class="hljs-symbol">remote_supervisor:</span> <span class="hljs-keyword">fn</span>(recipient) -&gt; {Chat.TaskSupervisor, recipient} <span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x521B;&#x5EFA;&#x53E6;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;<code>config/test.exs</code>&#xFF0C;&#x7136;&#x540E;&#x52A0;&#x5165;&#xFF1A;</p>
+<pre><code class="lang-elixir"><span class="hljs-comment"># config/test.exs</span>
+<span class="hljs-keyword">use</span> Mix.Config
+config <span class="hljs-symbol">:chat</span>, <span class="hljs-symbol">remote_supervisor:</span> <span class="hljs-keyword">fn</span>(_recipient) -&gt; Chat.TaskSupervisor <span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x628A; <code>config/config.exs</code> &#x5185;&#x7684;&#x4EE5;&#x4E0B;&#x8FD9;&#x884C;&#x524D;&#x9762;&#x7684;&#x6CE8;&#x91CA;&#x53BB;&#x6389;&#xFF1A;</p>
+<pre><code class="lang-elixir">import_config <span class="hljs-string">&quot;<span class="hljs-subst">#{Mix.env()}</span>.exs&quot;</span>
+</code></pre>
+<p>&#x6700;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x628A; <code>Chat.remote_supervisor/1</code> &#x51FD;&#x6570;&#x4FEE;&#x6539;&#x4E3A;&#x67E5;&#x627E;&#x548C;&#x4F7F;&#x7528;&#x5B9A;&#x4E49;&#x597D;&#x7684;&#x65B0;&#x5E94;&#x7528;&#x53D8;&#x91CF;&#xFF1A;</p>
+<pre><code class="lang-elixir"><span class="hljs-comment"># lib/chat.ex</span>
+<span class="hljs-function"><span class="hljs-keyword">defp</span> <span class="hljs-title">remote_supervisor</span></span>(recipient) <span class="hljs-keyword">do</span>
+  Application.get_env(<span class="hljs-symbol">:chat</span>, <span class="hljs-symbol">:remote_supervisor</span>).(recipient)
+<span class="hljs-keyword">end</span>
+</code></pre>
+<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
+<p>Elixir &#x7684;&#x539F;&#x751F;&#x5206;&#x5E03;&#x5F0F;&#x80FD;&#x529B;&#xFF0C;&#x5F53;&#x7136;&#x8FD8;&#x662F;&#x5E94;&#x5F53;&#x611F;&#x8C22; Erlang VM &#x7684;&#x5F3A;&#x5927;&#x80FD;&#x529B;&#xFF0C;&#x662F;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x8BA9; Elixir &#x5982;&#x6B64;&#x5F3A;&#x5927;&#x7684;&#x7279;&#x6027;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x60F3;&#x8C61;&#xFF0C;&#x901A;&#x8FC7; Elixir &#x7684;&#x80FD;&#x529B;&#xFF0C;&#x8FD0;&#x7528;&#x5206;&#x5E03;&#x5F0F;&#x8BA1;&#x7B97;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x8FD0;&#x884C;&#x540E;&#x53F0;&#x5E76;&#x884C;&#x4EFB;&#x52A1;&#xFF0C;&#x5BF9;&#x9AD8;&#x6027;&#x80FD;&#x5E94;&#x7528;&#x7684;&#x652F;&#x6301;&#xFF0C;&#x548C;&#x6267;&#x884C;&#x4E00;&#x4E9B;&#x6602;&#x8D35;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x672C;&#x6559;&#x7A0B;&#x8BA9;&#x6211;&#x4EEC;&#x4E86;&#x89E3;&#x5230; Elixir &#x7684;&#x57FA;&#x672C;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x5E76;&#x4E14;&#x4ECB;&#x7ECD;&#x4E86;&#x5F00;&#x59CB;&#x6253;&#x9020;&#x5206;&#x5E03;&#x5F0F;&#x5E94;&#x7528;&#x7684;&#x5DE5;&#x5177;&#x3002;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x76D1;&#x7BA1;&#x4EFB;&#x52A1;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x80FD;&#x5728;&#x5206;&#x5E03;&#x5F0F;&#x5E94;&#x7528;&#x7684;&#x4E0D;&#x540C;&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="otp-supervisors.html" class="navigation navigation-prev " aria-label="Previous page: OTP Supervisors">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="metaprogramming.html" class="navigation navigation-next " aria-label="Next page: 元编程">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"version":"1.0.1","title":"OTP 分布式","level":"2.7","depth":1,"next":{"title":"元编程","level":"2.8","depth":1,"path":"lessons/advanced/metaprogramming.md","ref":"lessons/advanced/metaprogramming.md","articles":[]},"previous":{"title":"OTP Supervisors","level":"2.6","depth":1,"path":"lessons/advanced/otp-supervisors.md","ref":"lessons/advanced/otp-supervisors.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lessons/advanced/otp-distribution.md","mtime":"2019-11-04T13:43:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-04T15:36:14.037Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

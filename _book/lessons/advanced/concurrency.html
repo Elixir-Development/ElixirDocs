@@ -1,0 +1,988 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>并发 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="otp-concurrency.html" />
+    
+    
+    <link rel="prev" href="escripts.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">第一部分：基础</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../basics/basics.html">
+            
+                <a href="../basics/basics.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../basics/collections.html">
+            
+                <a href="../basics/collections.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../basics/enum.html">
+            
+                <a href="../basics/enum.html">
+            
+                    
+                    Enum 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../basics/pattern-matching.html">
+            
+                <a href="../basics/pattern-matching.html">
+            
+                    
+                    模式匹配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../basics/control-structures.html">
+            
+                <a href="../basics/control-structures.html">
+            
+                    
+                    控制语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../basics/functions.html">
+            
+                <a href="../basics/functions.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../basics/pipe-operator.html">
+            
+                <a href="../basics/pipe-operator.html">
+            
+                    
+                    管道操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../basics/modules.html">
+            
+                <a href="../basics/modules.html">
+            
+                    
+                    模块(Module)]
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../basics/mix.html">
+            
+                <a href="../basics/mix.html">
+            
+                    
+                    Mix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../basics/sigils.html">
+            
+                <a href="../basics/sigils.html">
+            
+                    
+                    魔符(Sigil)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../basics/documentation.html">
+            
+                <a href="../basics/documentation.html">
+            
+                    
+                    文档模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../basics/testing.html">
+            
+                <a href="../basics/testing.html">
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../basics/comprehensions.html">
+            
+                <a href="../basics/comprehensions.html">
+            
+                    
+                    推导
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../basics/strings.html">
+            
+                <a href="../basics/strings.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../basics/date-time.html">
+            
+                <a href="../basics/date-time.html">
+            
+                    
+                    日期和时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../basics/mix-tasks.html">
+            
+                <a href="../basics/mix-tasks.html">
+            
+                    
+                    自定义Mix任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../basics/iex-helpers.html">
+            
+                <a href="../basics/iex-helpers.html">
+            
+                    
+                    IEx辅助函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：高级</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="erlang.html">
+            
+                <a href="erlang.html">
+            
+                    
+                    和Erlang互操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="error-handling.html">
+            
+                <a href="error-handling.html">
+            
+                    
+                    错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="escripts.html">
+            
+                <a href="escripts.html">
+            
+                    
+                    可执行文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.4" data-path="concurrency.html">
+            
+                <a href="concurrency.html">
+            
+                    
+                    并发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="otp-concurrency.html">
+            
+                <a href="otp-concurrency.html">
+            
+                    
+                    OTP并发]
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="otp-supervisors.html">
+            
+                <a href="otp-supervisors.html">
+            
+                    
+                    OTP Supervisors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="otp-distribution.html">
+            
+                <a href="otp-distribution.html">
+            
+                    
+                    OTP 分布式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="metaprogramming.html">
+            
+                <a href="metaprogramming.html">
+            
+                    
+                    元编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="umbrella-projects.html">
+            
+                <a href="umbrella-projects.html">
+            
+                    
+                    Umbrella Projects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="typespec.html">
+            
+                <a href="typespec.html">
+            
+                    
+                    Specifications and types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="behaviours.html">
+            
+                <a href="behaviours.html">
+            
+                    
+                    行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="gen-stage.html">
+            
+                <a href="gen-stage.html">
+            
+                    
+                    GenStage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="protocols.html">
+            
+                <a href="protocols.html">
+            
+                    
+                    协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="nerves.html">
+            
+                <a href="nerves.html">
+            
+                    
+                    Nerves
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：ECTO</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../ecto/basics.html">
+            
+                <a href="../ecto/basics.html">
+            
+                    
+                    Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../ecto/changesets.html">
+            
+                <a href="../ecto/changesets.html">
+            
+                    
+                    Changesets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../ecto/associations.html">
+            
+                <a href="../ecto/associations.html">
+            
+                    
+                    关联关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../ecto/querying.html">
+            
+                <a href="../ecto/querying.html">
+            
+                    
+                    查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：专题</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../specifics/plug.html">
+            
+                <a href="../specifics/plug.html">
+            
+                    
+                    Plug
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../specifics/eex.html">
+            
+                <a href="../specifics/eex.html">
+            
+                    
+                    嵌入的 Elixir(EEx)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../specifics/ets.html">
+            
+                <a href="../specifics/ets.html">
+            
+                    
+                    Erlang 项式存储(ETS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../specifics/mnesia.html">
+            
+                <a href="../specifics/mnesia.html">
+            
+                    
+                    Mnesia 数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../specifics/debugging.html">
+            
+                <a href="../specifics/debugging.html">
+            
+                    
+                    调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：程序库</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../libraries/guardian.html">
+            
+                <a href="../libraries/guardian.html">
+            
+                    
+                    Guardian(基础)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../libraries/poolboy.html">
+            
+                <a href="../libraries/poolboy.html">
+            
+                    
+                    Poolboy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../libraries/benchee.html">
+            
+                <a href="../libraries/benchee.html">
+            
+                    
+                    Benchee
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../libraries/bypass.html">
+            
+                <a href="../libraries/bypass.html">
+            
+                    
+                    Bypass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../libraries/distillery.html">
+            
+                <a href="../libraries/distillery.html">
+            
+                    
+                    Distillery(基础)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../libraries/stream-data.html">
+            
+                <a href="../libraries/stream-data.html">
+            
+                    
+                    StreamData
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >并发</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>Elixir &#x7684;&#x4E00;&#x5927;&#x5356;&#x70B9;&#x5C31;&#x662F;&#x5BF9;&#x5E76;&#x53D1;&#x7684;&#x652F;&#x6301;&#x3002;&#x5F97;&#x76CA;&#x4E8E; Erlang VM (BEAM)&#xFF0C;Elixir &#x7684;&#x5E76;&#x53D1;&#x8981;&#x6BD4;&#x9884;&#x671F;&#x4E2D;&#x7B80;&#x5355;&#x5F97;&#x591A;&#x3002;&#x8FD9;&#x4E2A;&#x5E76;&#x53D1;&#x6A21;&#x578B;&#x7684;&#x57FA;&#x7840;&#x662F; Actors&#xFF1A;&#x901A;&#x8FC7;&#x6D88;&#x606F;&#x4F20;&#x9012;&#x6765;&#x4EA4;&#x4E92;&#x7684;&#x8FDB;&#x7A0B;&#xFF08;&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x8FD9;&#x4E2A;&#x8FDB;&#x7A0B;&#x4E0D;&#x662F;&#x901A;&#x5E38;&#x6240;&#x8BF4;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7EA7;&#x522B;&#x7684;&#x8FDB;&#x7A0B;&#xFF0C;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A; Erlang VM (BEAM) &#x81EA;&#x5DF1;&#x7BA1;&#x7406;&#x7684;&#x8F7B;&#x91CF;&#x7EA7;&#x8FDB;&#x7A0B;&#xFF09;&#x3002;</p>
+<p>&#x8FD9;&#x8282;&#x8BFE;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x8BB2; Elixir &#x81EA;&#x5E26;&#x7684;&#x5E76;&#x53D1;&#x6A21;&#x578B;&#x3002;&#x5728;&#x540E;&#x9762;&#x7684;&#x7AE0;&#x8282;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x4F1A;&#x4ECB;&#x7ECD;&#x5E95;&#x5C42;&#x7684;&#x5B9E;&#x73B0;&#x673A;&#x5236;&#xFF1A;OTP &#x884C;&#x4E3A;&#xFF08;behaviors&#xFF09;&#x3002;</p>
+<h2 id="&#x8FDB;&#x7A0B;">&#x8FDB;&#x7A0B;</h2>
+<p>Erlang VM (BEAM) &#x7684;&#x8FDB;&#x7A0B;&#x5F88;&#x8F7B;&#x91CF;&#x7EA7;&#xFF0C;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x5728;&#x6240;&#x6709; CPU &#x4E0A;&#x3002;&#x770B;&#x8D77;&#x6765;&#x6709;&#x70B9;&#x50CF;&#x539F;&#x751F;&#x7684;&#x7EBF;&#x7A0B;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x4EEC;&#x66F4;&#x7B80;&#x5355;&#xFF0C;&#x800C;&#x4E14;&#x540C;&#x65F6;&#x8FD0;&#x884C;&#x51E0;&#x5343;&#x4E2A; Elixir &#x8FDB;&#x7A0B;&#x4E5F;&#x662F;&#x5E38;&#x4E8B;&#x3002;</p>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x8FDB;&#x7A0B;&#x6700;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6CD5;&#x662F; <code>spawn</code>&#xFF1A;&#x5B83;&#x63A5;&#x53D7;&#x533F;&#x540D;&#x51FD;&#x6570;&#x6216;&#x8005;&#x547D;&#x540D;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x3002;&#x5F53;&#x4F60;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8FDB;&#x7A0B;&#xFF0C;&#x5B83;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; <em>&#x8FDB;&#x7A0B;&#x6807;&#x793A;&#x7B26;</em> &#xFF0C;&#x6216;&#x8005;&#x8BF4; PID&#xFF0C;&#x5728;&#x7CFB;&#x7EDF;&#x91CC;&#x6765;&#x552F;&#x4E00;&#x786E;&#x5B9A;&#x8FD9;&#x4E2A;&#x8FDB;&#x7A0B;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x6765;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x7136;&#x540E;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x8981;&#x8FD0;&#x884C;&#x7684;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-elixir"><span class="hljs-class"><span class="hljs-keyword">defmodule</span> <span class="hljs-title">Example</span></span> <span class="hljs-keyword">do</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add</span></span>(a, b) <span class="hljs-keyword">do</span>
+    IO.puts(a + b)
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+
+iex&gt; Example.add(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
+<span class="hljs-number">5</span>
+<span class="hljs-symbol">:ok</span>
+</code></pre>
+<p>&#x8981;&#x5F02;&#x6B65;&#x8FD0;&#x884C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>spawn/3</code>&#xFF1A;</p>
+<pre><code class="lang-elixir">iex&gt; spawn(Example, <span class="hljs-symbol">:add</span>, [<span class="hljs-number">2</span>, <span class="hljs-number">3</span>])
+<span class="hljs-number">5</span>
+<span class="hljs-comment">#PID&lt;0.80.0&gt;</span>
+</code></pre>
+<h3 id="&#x6D88;&#x606F;&#x4F20;&#x9012;">&#x6D88;&#x606F;&#x4F20;&#x9012;</h3>
+<p>&#x8FDB;&#x7A0B;&#x4E4B;&#x95F4;&#x901A;&#x4FE1;&#x8981;&#x4F9D;&#x9760;&#x6D88;&#x606F;&#x4F20;&#x9012;&#x3002;&#x6709;&#x4E24;&#x4E2A;&#x4E3B;&#x8981;&#x7684;&#x7EC4;&#x4EF6;&#x505A;&#x6D88;&#x606F;&#x4F20;&#x9012;&#xFF1A;<code>send/2</code> &#x548C; <code>receive</code>&#x3002;<code>send/2</code> &#x51FD;&#x6570;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x5411; PIDs &#x53D1;&#x9001;&#x6D88;&#x606F;&#xFF0C;&#x4F7F;&#x7528; <code>receive</code> &#x76D1;&#x542C;&#x548C;&#x5339;&#x914D;&#x6D88;&#x606F;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5339;&#x914D;&#x7684;&#x6D88;&#x606F;&#xFF0C;&#x8FD0;&#x884C;&#x4F1A;&#x4E00;&#x76F4;&#x5904;&#x4E8E;&#x4E0D;&#x4E2D;&#x65AD;&#x7684;&#x72B6;&#x6001;&#x3002;</p>
+<pre><code class="lang-elixir"><span class="hljs-class"><span class="hljs-keyword">defmodule</span> <span class="hljs-title">Example</span></span> <span class="hljs-keyword">do</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">listen</span></span> <span class="hljs-keyword">do</span>
+    receive <span class="hljs-keyword">do</span>
+      {<span class="hljs-symbol">:ok</span>, <span class="hljs-string">&quot;hello&quot;</span>} -&gt; IO.puts(<span class="hljs-string">&quot;World&quot;</span>)
+    <span class="hljs-keyword">end</span>
+
+    listen
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+
+iex&gt; pid = spawn(Example, <span class="hljs-symbol">:listen</span>, [])
+<span class="hljs-comment">#PID&lt;0.108.0&gt;</span>
+
+iex&gt; send pid, {<span class="hljs-symbol">:ok</span>, <span class="hljs-string">&quot;hello&quot;</span>}
+World
+{<span class="hljs-symbol">:ok</span>, <span class="hljs-string">&quot;hello&quot;</span>}
+
+iex&gt; send pid, <span class="hljs-symbol">:ok</span>
+<span class="hljs-symbol">:ok</span>
+</code></pre>
+<p>&#x4F60;&#x53EF;&#x80FD;&#x6CE8;&#x610F;&#x5230; <code>listen/0</code> &#x51FD;&#x6570;&#x662F;&#x9012;&#x5F52;&#x7684;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x8BA9;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x5904;&#x7406;&#x591A;&#x4E2A;&#x6D88;&#x606F;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x9012;&#x5F52;&#x8C03;&#x7528;&#xFF0C;&#x4E0A;&#x9762;&#x7684;&#x8FDB;&#x7A0B;&#x5904;&#x7406;&#x5B8C;&#x7B2C;&#x4E00;&#x4E2A;&#x6D88;&#x606F;&#x5C31;&#x4F1A;&#x9000;&#x51FA;&#x3002;</p>
+<h3 id="&#x8FDB;&#x7A0B;&#x94FE;&#x63A5;">&#x8FDB;&#x7A0B;&#x94FE;&#x63A5;</h3>
+<p>&#x5F53;&#x8FDB;&#x7A0B;&#x5D29;&#x6E83;&#x7684;&#x65F6;&#x5019;&#xFF0C;<code>spawn</code> &#x5C31;&#x4F1A;&#x6709;&#x95EE;&#x9898;&#xFF08;&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x7236;&#x8FDB;&#x7A0B;&#x4E0D;&#x77E5;&#x9053;&#x5B50;&#x8FDB;&#x7A0B;&#x51FA;&#x9519;&#x4F1A;&#x5BFC;&#x81F4;&#x7A0B;&#x5E8F;&#x5F02;&#x5E38;&#xFF09;&#x3002;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528; <code>spawn_link</code> &#x628A;&#x8FDB;&#x7A0B;&#x94FE;&#x63A5;&#x8D77;&#x6765;&#x3002;&#x4E24;&#x4E2A;&#x94FE;&#x63A5;&#x8D77;&#x6765;&#x7684;&#x8FDB;&#x7A0B;&#x80FD;&#x6536;&#x5230;&#x76F8;&#x4E92;&#x7684;&#x9000;&#x51FA;&#x901A;&#x77E5;&#x3002;</p>
+<pre><code class="lang-elixir"><span class="hljs-class"><span class="hljs-keyword">defmodule</span> <span class="hljs-title">Example</span></span> <span class="hljs-keyword">do</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">explode</span></span>, <span class="hljs-symbol">do:</span> exit(<span class="hljs-symbol">:kaboom</span>)
+<span class="hljs-keyword">end</span>
+
+iex&gt; spawn(Example, <span class="hljs-symbol">:explode</span>, [])
+<span class="hljs-comment">#PID&lt;0.66.0&gt;</span>
+
+iex&gt; spawn_link(Example, <span class="hljs-symbol">:explode</span>, [])
+** (EXIT from <span class="hljs-comment">#PID&lt;0.57.0&gt;) evaluator process exited with reason: :kaboom</span>
+</code></pre>
+<p>&#x6709;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x4E0D;&#x5E0C;&#x671B;&#x94FE;&#x63A5;&#x7684;&#x8FDB;&#x7A0B;&#x5BFC;&#x81F4;&#x5F53;&#x524D;&#x8FDB;&#x7A0B;&#x8DDF;&#x7740;&#x5D29;&#x6E83;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x5C31;&#x8981;&#x901A;&#x8FC7; <code>Process.flag/2</code> &#x51FD;&#x6570;&#x6355;&#x6349;&#x8FDB;&#x7A0B;&#x7684;&#x9519;&#x8BEF;&#x9000;&#x51FA;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7528; Erlang &#x7684; <a href="http://erlang.org/doc/man/erlang.html#process_flag-2" target="_blank">process_flag/2</a> &#x7684; <code>trap_exit</code> &#x4FE1;&#x53F7;&#x3002;&#x5F53;&#x6355;&#x83B7;&#x5230;&#x88AB;&#x94FE;&#x63A5;&#x7684;&#x8FDB;&#x7A0B;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x9000;&#x51FA;&#x65F6;&#xFF08;<code>trap_exit</code> &#x8BBE;&#x4E3A; <code>true</code>&#xFF09;, &#x5C31;&#x4F1A;&#x6536;&#x5230;&#x50CF; <code>{:EXIT, from_pid, reason}</code> &#x8FD9;&#x6837;&#x7684;&#x4E09;&#x5143;&#x7EC4;&#x5F62;&#x5F0F;&#x7684;&#x9000;&#x51FA;&#x4FE1;&#x53F7;&#x3002;</p>
+<pre><code class="lang-elixir"><span class="hljs-class"><span class="hljs-keyword">defmodule</span> <span class="hljs-title">Example</span></span> <span class="hljs-keyword">do</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">explode</span></span>, <span class="hljs-symbol">do:</span> exit(<span class="hljs-symbol">:kaboom</span>)
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">run</span></span> <span class="hljs-keyword">do</span>
+    Process.flag(<span class="hljs-symbol">:trap_exit</span>, <span class="hljs-keyword">true</span>)
+    spawn_link(Example, <span class="hljs-symbol">:explode</span>, [])
+
+    receive <span class="hljs-keyword">do</span>
+      {<span class="hljs-symbol">:EXIT</span>, from_pid, reason} -&gt; IO.puts(<span class="hljs-string">&quot;Exit reason: <span class="hljs-subst">#{reason}</span>&quot;</span>)
+    <span class="hljs-keyword">end</span>
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+
+iex&gt; Example.run
+Exit <span class="hljs-symbol">reason:</span> kaboom
+<span class="hljs-symbol">:ok</span>
+</code></pre>
+<h3 id="&#x8FDB;&#x7A0B;&#x76D1;&#x63A7;">&#x8FDB;&#x7A0B;&#x76D1;&#x63A7;</h3>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x4E0D;&#x60F3;&#x94FE;&#x63A5;&#x4E24;&#x4E2A;&#x8FDB;&#x7A0B;&#xFF0C;&#x4F46;&#x4ECD;&#x7136;&#x5E0C;&#x671B;&#x80FD;&#x6709;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x901A;&#x77E5;&#x5462;&#xFF1F;&#x8981;&#x505A;&#x5230;&#x8FD9;&#x4E2A;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>spawn_monitor</code>&#x3002;&#x5F53;&#x6211;&#x4EEC;&#x76D1;&#x63A7;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x88AB;&#x76D1;&#x63A7;&#x8FDB;&#x7A0B;&#x5D29;&#x6E83;&#x7684;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x4F1A;&#x63A5;&#x6536;&#x5230;&#x6D88;&#x606F;&#xFF0C;&#x800C;&#x4E14;&#x4E0D;&#x9700;&#x8981;&#x53BB;&#x6355;&#x83B7;&#x5F02;&#x5E38;&#xFF0C;&#x4E5F;&#x4E0D;&#x4F1A;&#x5BFC;&#x81F4;&#x5F53;&#x524D;&#x8FDB;&#x7A0B;&#x5D29;&#x6E83;&#x3002;</p>
+<pre><code class="lang-elixir"><span class="hljs-class"><span class="hljs-keyword">defmodule</span> <span class="hljs-title">Example</span></span> <span class="hljs-keyword">do</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">explode</span></span>, <span class="hljs-symbol">do:</span> exit(<span class="hljs-symbol">:kaboom</span>)
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">run</span></span> <span class="hljs-keyword">do</span>
+    {pid, ref} = spawn_monitor(Example, <span class="hljs-symbol">:explode</span>, [])
+
+    receive <span class="hljs-keyword">do</span>
+      {<span class="hljs-symbol">:DOWN</span>, ref, <span class="hljs-symbol">:process</span>, from_pid, reason} -&gt; IO.puts(<span class="hljs-string">&quot;Exit reason: <span class="hljs-subst">#{reason}</span>&quot;</span>)
+    <span class="hljs-keyword">end</span>
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+
+iex&gt; Example.run
+Exit <span class="hljs-symbol">reason:</span> kaboom
+<span class="hljs-symbol">:ok</span>
+</code></pre>
+<h2 id="agent">Agent</h2>
+<p>Agent &#x662F;&#x540E;&#x53F0;&#x8FD0;&#x884C;&#x7684;&#x53EF;&#x4EE5;&#x4FDD;&#x5B58;&#x72B6;&#x6001;&#x8FDB;&#x7A0B;&#x7684;&#x62BD;&#x8C61;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x5E94;&#x7528;&#x548C;&#x8282;&#x70B9;&#x4E2D;&#x7684;&#x8FDB;&#x7A0B;&#x4E2D;&#x83B7;&#x53D6;&#x5B83;&#x7684;&#x72B6;&#x6001;&#x3002;Agent &#x7684;&#x72B6;&#x6001;&#x88AB;&#x8BBE;&#x7F6E;&#x6210;&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#xFF1A;</p>
+<pre><code class="lang-elixir">iex&gt; {<span class="hljs-symbol">:ok</span>, agent} = Agent.start_link(<span class="hljs-keyword">fn</span> -&gt; [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>] <span class="hljs-keyword">end</span>)
+{<span class="hljs-symbol">:ok</span>, <span class="hljs-comment">#PID&lt;0.65.0&gt;}</span>
+
+iex&gt; Agent.update(agent, <span class="hljs-keyword">fn</span> (state) -&gt; state ++ [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>] <span class="hljs-keyword">end</span>)
+<span class="hljs-symbol">:ok</span>
+
+iex&gt; Agent.get(agent, &amp;(&amp;<span class="hljs-number">1</span>))
+[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]
+</code></pre>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7ED9; Agent &#x547D;&#x540D;&#xFF0C;&#x540E;&#x9762;&#x5C31;&#x53EF;&#x4EE5;&#x7528;&#x540D;&#x5B57;&#x800C;&#x4E0D;&#x662F; PID &#x6765;&#x6307;&#x4EE3;&#x5B83;&#xFF1A;</p>
+<pre><code class="lang-elixir">iex&gt; Agent.start_link(<span class="hljs-keyword">fn</span> -&gt; [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>] <span class="hljs-keyword">end</span>, <span class="hljs-symbol">name:</span> Numbers)
+{<span class="hljs-symbol">:ok</span>, <span class="hljs-comment">#PID&lt;0.74.0&gt;}</span>
+
+iex&gt; Agent.get(Numbers, &amp;(&amp;<span class="hljs-number">1</span>))
+[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+</code></pre>
+<h2 id="task">Task</h2>
+<p>Task &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x5728;&#x540E;&#x53F0;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x540E;&#x9762;&#x518D;&#x83B7;&#x53D6;&#x5B83;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x3002;&#x5728;&#x5904;&#x7406;&#x8017;&#x65F6;&#x64CD;&#x4F5C;&#x7684;&#x65F6;&#x5019;&#xFF0C;tasks &#x4F1A;&#x5F88;&#x6709;&#x7528;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x4E0D;&#x963B;&#x585E;&#x5F53;&#x524D;&#x7684;&#x7A0B;&#x5E8F;&#x3002;</p>
+<pre><code class="lang-elixir"><span class="hljs-class"><span class="hljs-keyword">defmodule</span> <span class="hljs-title">Example</span></span> <span class="hljs-keyword">do</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">double</span></span>(x) <span class="hljs-keyword">do</span>
+    <span class="hljs-symbol">:timer</span>.sleep(<span class="hljs-number">2000</span>)
+    x * <span class="hljs-number">2</span>
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+
+iex&gt; task = Task.async(Example, <span class="hljs-symbol">:double</span>, [<span class="hljs-number">2000</span>])
+%Task{<span class="hljs-symbol">pid:</span> <span class="hljs-comment">#PID&lt;0.111.0&gt;, ref: #Reference&lt;0.0.8.200&gt;}</span>
+
+<span class="hljs-comment"># Do some work</span>
+
+iex&gt; Task.await(task)
+<span class="hljs-number">4000</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="escripts.html" class="navigation navigation-prev " aria-label="Previous page: 可执行文件">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="otp-concurrency.html" class="navigation navigation-next " aria-label="Next page: OTP并发]">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"version":"1.1.0","title":"并发","level":"2.4","depth":1,"next":{"title":"OTP并发]","level":"2.5","depth":1,"path":"lessons/advanced/otp-concurrency.md","ref":"lessons/advanced/otp-concurrency.md","articles":[]},"previous":{"title":"可执行文件","level":"2.3","depth":1,"path":"lessons/advanced/escripts.md","ref":"lessons/advanced/escripts.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lessons/advanced/concurrency.md","mtime":"2019-11-04T13:42:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-04T15:36:14.037Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

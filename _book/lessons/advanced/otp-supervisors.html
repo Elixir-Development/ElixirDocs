@@ -1,0 +1,975 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>OTP Supervisors · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="otp-distribution.html" />
+    
+    
+    <link rel="prev" href="otp-concurrency.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">第一部分：基础</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../basics/basics.html">
+            
+                <a href="../basics/basics.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../basics/collections.html">
+            
+                <a href="../basics/collections.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../basics/enum.html">
+            
+                <a href="../basics/enum.html">
+            
+                    
+                    Enum 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../basics/pattern-matching.html">
+            
+                <a href="../basics/pattern-matching.html">
+            
+                    
+                    模式匹配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../basics/control-structures.html">
+            
+                <a href="../basics/control-structures.html">
+            
+                    
+                    控制语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../basics/functions.html">
+            
+                <a href="../basics/functions.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../basics/pipe-operator.html">
+            
+                <a href="../basics/pipe-operator.html">
+            
+                    
+                    管道操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../basics/modules.html">
+            
+                <a href="../basics/modules.html">
+            
+                    
+                    模块(Module)]
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../basics/mix.html">
+            
+                <a href="../basics/mix.html">
+            
+                    
+                    Mix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../basics/sigils.html">
+            
+                <a href="../basics/sigils.html">
+            
+                    
+                    魔符(Sigil)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../basics/documentation.html">
+            
+                <a href="../basics/documentation.html">
+            
+                    
+                    文档模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../basics/testing.html">
+            
+                <a href="../basics/testing.html">
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../basics/comprehensions.html">
+            
+                <a href="../basics/comprehensions.html">
+            
+                    
+                    推导
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../basics/strings.html">
+            
+                <a href="../basics/strings.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../basics/date-time.html">
+            
+                <a href="../basics/date-time.html">
+            
+                    
+                    日期和时间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../basics/mix-tasks.html">
+            
+                <a href="../basics/mix-tasks.html">
+            
+                    
+                    自定义Mix任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../basics/iex-helpers.html">
+            
+                <a href="../basics/iex-helpers.html">
+            
+                    
+                    IEx辅助函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二部分：高级</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="erlang.html">
+            
+                <a href="erlang.html">
+            
+                    
+                    和Erlang互操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="error-handling.html">
+            
+                <a href="error-handling.html">
+            
+                    
+                    错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="escripts.html">
+            
+                <a href="escripts.html">
+            
+                    
+                    可执行文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="concurrency.html">
+            
+                <a href="concurrency.html">
+            
+                    
+                    并发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="otp-concurrency.html">
+            
+                <a href="otp-concurrency.html">
+            
+                    
+                    OTP并发]
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.6" data-path="otp-supervisors.html">
+            
+                <a href="otp-supervisors.html">
+            
+                    
+                    OTP Supervisors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="otp-distribution.html">
+            
+                <a href="otp-distribution.html">
+            
+                    
+                    OTP 分布式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="metaprogramming.html">
+            
+                <a href="metaprogramming.html">
+            
+                    
+                    元编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="umbrella-projects.html">
+            
+                <a href="umbrella-projects.html">
+            
+                    
+                    Umbrella Projects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="typespec.html">
+            
+                <a href="typespec.html">
+            
+                    
+                    Specifications and types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="behaviours.html">
+            
+                <a href="behaviours.html">
+            
+                    
+                    行为
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="gen-stage.html">
+            
+                <a href="gen-stage.html">
+            
+                    
+                    GenStage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="protocols.html">
+            
+                <a href="protocols.html">
+            
+                    
+                    协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="nerves.html">
+            
+                <a href="nerves.html">
+            
+                    
+                    Nerves
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三部分：ECTO</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../ecto/basics.html">
+            
+                <a href="../ecto/basics.html">
+            
+                    
+                    Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../ecto/changesets.html">
+            
+                <a href="../ecto/changesets.html">
+            
+                    
+                    Changesets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../ecto/associations.html">
+            
+                <a href="../ecto/associations.html">
+            
+                    
+                    关联关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../ecto/querying.html">
+            
+                <a href="../ecto/querying.html">
+            
+                    
+                    查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四部分：专题</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../specifics/plug.html">
+            
+                <a href="../specifics/plug.html">
+            
+                    
+                    Plug
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../specifics/eex.html">
+            
+                <a href="../specifics/eex.html">
+            
+                    
+                    嵌入的 Elixir(EEx)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../specifics/ets.html">
+            
+                <a href="../specifics/ets.html">
+            
+                    
+                    Erlang 项式存储(ETS)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../specifics/mnesia.html">
+            
+                <a href="../specifics/mnesia.html">
+            
+                    
+                    Mnesia 数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../specifics/debugging.html">
+            
+                <a href="../specifics/debugging.html">
+            
+                    
+                    调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第五部分：程序库</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../libraries/guardian.html">
+            
+                <a href="../libraries/guardian.html">
+            
+                    
+                    Guardian(基础)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../libraries/poolboy.html">
+            
+                <a href="../libraries/poolboy.html">
+            
+                    
+                    Poolboy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../libraries/benchee.html">
+            
+                <a href="../libraries/benchee.html">
+            
+                    
+                    Benchee
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../libraries/bypass.html">
+            
+                <a href="../libraries/bypass.html">
+            
+                    
+                    Bypass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../libraries/distillery.html">
+            
+                <a href="../libraries/distillery.html">
+            
+                    
+                    Distillery(基础)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../libraries/stream-data.html">
+            
+                <a href="../libraries/stream-data.html">
+            
+                    
+                    StreamData
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >OTP Supervisors</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>Supervisors &#x662F;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x8FDB;&#x7A0B;&#xFF1A;&#x4E13;&#x95E8;&#x6765;&#x76D1;&#x63A7;&#x5176;&#x4ED6;&#x7684;&#x8FDB;&#x7A0B;&#x3002;supervisors &#x80FD;&#x591F;&#x81EA;&#x52A8;&#x91CD;&#x542F;&#x51FA;&#x9519;&#x7684;&#x5B50;&#x8FDB;&#x7A0B;&#xFF0C;&#x4ECE;&#x800C;&#x7F16;&#x5199;&#x5BB9;&#x9519;&#x6027;&#x9AD8;&#x7684;&#x7A0B;&#x5E8F;&#x3002;</p>
+<h2 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h2>
+<p>Supervisors &#x7684;&#x9B54;&#x529B;&#x4E3B;&#x8981;&#x5728; <code>Supervisor.start_link/2</code> &#x51FD;&#x6570;&#x3002;&#x9664;&#x4E86;&#x80FD;&#x542F;&#x52A8; supervisor &#x548C;&#x5B50;&#x8FDB;&#x7A0B;&#x4E4B;&#x5916;&#xFF0C;&#x5B83;&#x8FD8;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x8BBE;&#x7F6E;&#x7BA1;&#x7406;&#x5B50;&#x8FDB;&#x7A0B;&#x7684;&#x7B56;&#x7565;&#x3002;</p>
+<p>&#x901A;&#x8FC7; <a href="../../advanced/otp-concurrency"><code>OTP &#x5E76;&#x53D1;</code></a> &#x8BFE;&#x7A0B;&#x4E2D;&#x5B9E;&#x73B0;&#x7684; <code>SimpleQueue</code>&#xFF0C;&#x6211;&#x4EEC;&#x5F00;&#x59CB;&#x672C;&#x8282;&#x8BFE;&#x7A0B;&#xFF1A;  </p>
+<p>&#x4F7F;&#x7528; <code>mix new simple_queue --sup</code> &#x547D;&#x4EE4;&#xFF0C;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E86;&#x62E5;&#x6709; supervisor &#x6811;&#x7684;&#x65B0;&#x9879;&#x76EE;&#x3002;<code>SimpleQueue</code> &#x7684;&#x4EE3;&#x7801;&#x56E0;&#x4E3A;&#x653E;&#x5728; <code>lib/simple_queue.ex</code> &#x800C; supervisor &#x7684;&#x4EE3;&#x7801;&#x6211;&#x4EEC;&#x5C06;&#x6DFB;&#x52A0;&#x5230; <code>lib/simple_queue/application.ex</code> &#x4E2D;&#x3002;  </p>
+<p>&#x5B50;&#x8FDB;&#x7A0B;&#x901A;&#x8FC7;&#x5217;&#x8868;&#x7684;&#x65B9;&#x5F0F;&#x5B9A;&#x4E49;&#xFF0C;&#x8981;&#x4E48;&#x662F;&#x6A21;&#x5757;&#x540D;&#x79F0;&#x7684;&#x5217;&#x8868;&#xFF1A;  </p>
+<pre><code class="lang-elixir"><span class="hljs-class"><span class="hljs-keyword">defmodule</span> <span class="hljs-title">SimpleQueue</span></span>.Application <span class="hljs-keyword">do</span>
+  <span class="hljs-keyword">use</span> Application
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">start</span></span>(_type, _args) <span class="hljs-keyword">do</span>
+    children = [
+      SimpleQueue
+    ]
+
+    opts = [<span class="hljs-symbol">strategy:</span> <span class="hljs-symbol">:one_for_one</span>, <span class="hljs-symbol">name:</span> SimpleQueue.Supervisor]
+    Supervisor.start_link(children, opts)
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x8981;&#x4E48;&#x662F;&#x5143;&#x7EC4;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8FD8;&#x60F3;&#x5305;&#x542B;&#x914D;&#x7F6E;&#x9879;&#x7684;&#x8BDD;&#xFF1A;  </p>
+<pre><code class="lang-elixir"><span class="hljs-class"><span class="hljs-keyword">defmodule</span> <span class="hljs-title">SimpleQueue</span></span>.Application <span class="hljs-keyword">do</span>
+  <span class="hljs-keyword">use</span> Application
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">start</span></span>(_type, _args) <span class="hljs-keyword">do</span>
+    children = [
+      {SimpleQueue, [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]}
+    ]
+
+    opts = [<span class="hljs-symbol">strategy:</span> <span class="hljs-symbol">:one_for_one</span>, <span class="hljs-symbol">name:</span> SimpleQueue.Supervisor]
+    Supervisor.start_link(children, opts)
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x8FD0;&#x884C; <code>iex -S mix</code> &#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x4F1A;&#x770B;&#x5230; <code>SimpleQueue</code> &#x5DF2;&#x7ECF;&#x81EA;&#x52A8;&#x542F;&#x52A8;&#x4E86;&#xFF1A;  </p>
+<pre><code class="lang-elixir">iex&gt; SimpleQueue.queue
+[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+</code></pre>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7684; <code>SimpleQueue</code> &#x8FDB;&#x7A0B;&#x5D29;&#x6E83;&#x4E86;&#xFF0C;&#x6216;&#x8005;&#x88AB;&#x4E2D;&#x6B62;&#x4E86;&#xFF0C;Supervisor &#x4F1A;&#x81EA;&#x52A8;&#x91CD;&#x542F;&#x8FD9;&#x4E2A;&#x8FDB;&#x7A0B;&#xFF0C;&#x5C31;&#x50CF;&#x4EC0;&#x4E48;&#x4E8B;&#x60C5;&#x90FD;&#x6CA1;&#x6709;&#x53D1;&#x751F;&#x8FC7;&#x4E00;&#x6837;&#x3002;  </p>
+<h3 id="&#x7B56;&#x7565;">&#x7B56;&#x7565;</h3>
+<p>&#x76EE;&#x524D;&#x6709;&#x4E09;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x91CD;&#x542F;&#x7B56;&#x7565;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF1A;</p>
+<ul>
+<li><code>:one_for_one</code> - &#x53EA;&#x91CD;&#x542F;&#x5931;&#x8D25;&#x7684;&#x5B50;&#x8FDB;&#x7A0B;&#x3002;  </li>
+<li><code>:one_for_all</code> - &#x5F53;&#x9519;&#x8BEF;&#x4E8B;&#x4EF6;&#x51FA;&#x73B0;&#x65F6;&#xFF0C;&#x91CD;&#x542F;&#x6240;&#x6709;&#x7684;&#x5B50;&#x8FDB;&#x7A0B;&#x3002;  </li>
+<li><code>:rest_for_one</code> - &#x91CD;&#x542F;&#x5931;&#x8D25;&#x7684;&#x5B50;&#x8FDB;&#x7A0B;&#xFF0C;&#x4EE5;&#x53CA;&#x6240;&#x6709;&#x5728;&#x5B83;&#x540E;&#x9762;&#x542F;&#x52A8;&#x7684;&#x8FDB;&#x7A0B;&#x3002;  </li>
+</ul>
+<h2 id="&#x5B50;&#x8FDB;&#x7A0B;-specification">&#x5B50;&#x8FDB;&#x7A0B; Specification</h2>
+<p>&#x5F53; supervisor &#x8FDB;&#x7A0B;&#x542F;&#x52A8;&#x540E;&#xFF0C;&#x5B83;&#x5FC5;&#x987B;&#x77E5;&#x9053;&#x5982;&#x4F55; start/stop/restart &#x5B83;&#x7684;&#x5B50;&#x8FDB;&#x7A0B;&#x3002;&#x6BCF;&#x4E2A;&#x5B50;&#x6A21;&#x5757;&#x90FD;&#x5E94;&#x8BE5;&#x62E5;&#x6709; <code>child_spec/1</code> &#x51FD;&#x6570;&#x6765;&#x5B9A;&#x4E49;&#x597D;&#x8FD9;&#x4E9B;&#x884C;&#x4E3A;&#x3002;&#x5B8F; <code>use GenServer</code>&#xFF0C;<code>use Supervisor</code> &#x548C; <code>use Agent</code> &#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x4E3A;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x597D;&#x8FD9;&#x4E9B;&#x884C;&#x4E3A;&#xFF08;<code>SimpleQueue</code> &#x4F7F;&#x7528;&#x4E86; <code>use GenServer</code>&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#xFF09;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x8FD9;&#x4E9B;&#x884C;&#x4E3A;&#xFF0C;&#x4F60;&#x8981;&#x5728; <code>child_spec/1</code> &#x51FD;&#x6570;&#x4E2D;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x9009;&#x9879;&#x6620;&#x5C04;&#xFF1A;  </p>
+<pre><code class="lang-elixir"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">child_spec</span></span>(opts) <span class="hljs-keyword">do</span>
+  %{
+    <span class="hljs-symbol">id:</span> SimpleQueue,
+    <span class="hljs-symbol">start:</span> {__MODULE_<span class="hljs-number">_</span>, <span class="hljs-symbol">:start_link</span>, [opts]},
+    <span class="hljs-symbol">shutdown:</span> <span class="hljs-number">5_000</span>,
+    <span class="hljs-symbol">restart:</span> <span class="hljs-symbol">:permanent</span>,
+    <span class="hljs-symbol">type:</span> <span class="hljs-symbol">:worker</span>
+  }
+<span class="hljs-keyword">end</span>
+</code></pre>
+<ul>
+<li><p><code>id</code> - &#x5FC5;&#x5907; key&#x3002;Supervisor &#x7528;&#x6765;&#x5B9A;&#x4F4D;&#x5B50;&#x8FDB;&#x7A0B;&#x7684; specification&#x3002;  </p>
+</li>
+<li><p><code>start</code> - &#x5FC5;&#x5907; key&#x3002;&#x88AB; Supervisor &#x542F;&#x52A8;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x8C03;&#x7528;&#x7684; Module/Function/Arguments  </p>
+</li>
+<li><p><code>shutdown</code> - &#x53EF;&#x9009; key&#x3002;&#x5B50;&#x8FDB;&#x7A0B;&#x5173;&#x95ED;&#x65F6;&#x7684;&#x884C;&#x4E3A;&#x3002;&#x53EF;&#x9009;&#x9879;&#x4E3A;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#xFF1A;  </p>
+<ul>
+<li><p><code>:brutal_kill</code> - &#x5B50;&#x8FDB;&#x7A0B;&#x7ACB;&#x5373;&#x505C;&#x6B62;  </p>
+</li>
+<li><p>&#x4EFB;&#x4F55;&#x6B63;&#x6574;&#x6570; - &#x4EE5;&#x6BEB;&#x79D2;&#x4E3A;&#x5355;&#x4F4D;&#x7684;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#xFF0C;&#x8D85;&#x8FC7;&#x540E; Supervisor &#x5C06;&#x6740;&#x6389;&#x6B64;&#x5B50;&#x8FDB;&#x7A0B;&#x3002;&#x5982;&#x679C;&#x8FDB;&#x7A0B;&#x662F; <code>:worker</code> &#x7C7B;&#x578B;&#xFF0C;&#x6B64;&#x9009;&#x9879;&#x9ED8;&#x8BA4;&#x4E3A; 5000&#x3002;  </p>
+</li>
+<li><p><code>:infinity</code> - Supervisor &#x5C06;&#x4F1A;&#x65E0;&#x9650;&#x671F;&#x5730;&#x7B49;&#x5F85;&#x3002;&#x8FD9;&#x662F; <code>:supervisor</code> &#x8FDB;&#x7A0B;&#x7C7B;&#x578B;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x3002;&#x4E0D;&#x63A8;&#x8350; <code>:worker</code> &#x7C7B;&#x578B;&#x4F7F;&#x7528;&#x3002;  </p>
+</li>
+</ul>
+</li>
+<li><p><code>restart</code> - &#x53EF;&#x9009; key&#x3002;&#x5F53;&#x5B50;&#x8FDB;&#x7A0B;&#x5D29;&#x6E83;&#x65F6;&#x6709;&#x5982;&#x4E0B;&#x51E0;&#x79CD;&#x5904;&#x7406;&#x65B9;&#x5F0F;&#xFF1A;  </p>
+<ul>
+<li><p><code>:permanent</code> - &#x603B;&#x662F;&#x91CD;&#x542F;&#x5B50;&#x8FDB;&#x7A0B;&#x3002;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x3002;  </p>
+</li>
+<li><p><code>:temporary</code> - &#x7EDD;&#x4E0D;&#x91CD;&#x542F;&#x5B50;&#x8FDB;&#x7A0B;&#x3002;  </p>
+</li>
+<li><p><code>:transient</code> - &#x53EA;&#x6709;&#x5728;&#x975E;&#x6B63;&#x5E38;&#x4E2D;&#x6B62;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x624D;&#x91CD;&#x542F;&#x5B50;&#x8FDB;&#x7A0B;&#x3002;  </p>
+</li>
+</ul>
+</li>
+<li><p><code>type</code> - &#x53EF;&#x9009; key&#x3002;&#x8FDB;&#x7A0B;&#x53EF;&#x4EE5;&#x662F; <code>:worker</code> &#x6216;&#x8005; <code>:supervisor</code> &#x7C7B;&#x578B;&#x3002;&#x9ED8;&#x8BA4;&#x662F; <code>:worker</code>&#x3002;  </p>
+</li>
+</ul>
+<h2 id="dynamicsupervisor">DynamicSupervisor</h2>
+<p>Supervisors &#x901A;&#x5E38;&#x5728;&#x5E94;&#x7528;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F34;&#x968F;&#x7740;&#x5B50;&#x8FDB;&#x7A0B;&#x800C;&#x542F;&#x52A8;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x6709;&#x65F6;&#x5019;&#xFF0C;&#x88AB;&#x76D1;&#x7BA1;&#x7684;&#x5B50;&#x8FDB;&#x7A0B;&#x5728;&#x5E94;&#x7528;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8FD8;&#x662F;&#x672A;&#x77E5;&#x7684;&#xFF08;&#x6BD4;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x80FD;&#x5728; web &#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x542F;&#x52A8;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8FDB;&#x7A0B;&#x6765;&#x5904;&#x7406;&#x7528;&#x6237;&#x5230;&#x6211;&#x4EEC;&#x7F51;&#x7AD9;&#x7684;&#x8FDE;&#x63A5;&#xFF09;&#x3002;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x80FD;&#x6309;&#x9700;&#x542F;&#x52A8;&#x5B50;&#x8FDB;&#x7A0B;&#x7684; Supervisor&#x3002;&#x800C; DynamicSupervisor &#x6B63;&#x662F;&#x7528;&#x6765;&#x5904;&#x7406;&#x8FD9;&#x79CD;&#x573A;&#x666F;&#x7684;&#x3002;  </p>
+<p>&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5E76;&#x4E0D;&#x6307;&#x5B9A;&#x5B50;&#x8FDB;&#x7A0B;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x4E3A; supervisor &#x5B9A;&#x4E49;&#x597D;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x9009;&#x9879;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;DynamicSupervisor &#x53EA;&#x652F;&#x6301; <code>:one_for_one</code> &#x8FD9;&#x79CD;&#x76D1;&#x7BA1;&#x7B56;&#x7565;&#xFF1A;  </p>
+<pre><code class="lang-elixir">options = [
+  <span class="hljs-symbol">name:</span> SimpleQueue.Supervisor,
+  <span class="hljs-symbol">strategy:</span> <span class="hljs-symbol">:one_for_one</span>
+]
+
+DynamicSupervisor.start_link(options)
+</code></pre>
+<p>&#x7136;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4F7F;&#x7528; <code>start_child/2</code> &#x51FD;&#x6570;&#x6765;&#x52A8;&#x6001;&#x542F;&#x52A8;&#x65B0;&#x7684; SimpleQueue &#x5B50;&#x8FDB;&#x7A0B;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x63A5;&#x6536;&#x4E00;&#x4E2A; supervisor &#x548C; &#x5B50;&#x8FDB;&#x7A0B; specification &#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF08;&#x518D;&#x6B21;&#x5F3A;&#x8C03;&#xFF0C;<code>SimpleQueue</code> &#x4F7F;&#x7528;&#x4E86; <code>use GenServer</code>&#xFF0C;&#x6240;&#x4EE5;&#x5B50;&#x8FDB;&#x7A0B;&#x7684; specification &#x5DF2;&#x7ECF;&#x5B9A;&#x4E49;&#x597D;&#x4E86;&#xFF09;&#xFF1A;  </p>
+<pre><code class="lang-elixir">{<span class="hljs-symbol">:ok</span>, pid} = DynamicSupervisor.start_child(SimpleQueue.Supervisor, SimpleQueue)
+</code></pre>
+<h2 id="task-supervisor">Task Supervisor</h2>
+<p>Tasks &#x6709;&#x5B83;&#x4EEC;&#x81EA;&#x5DF1;&#x7279;&#x6B8A;&#x7684; Supervisor&#xFF0C;&#x53EB;&#x505A; <code>Task.Supervisor</code>&#x3002;&#x5B83;&#x662F;&#x4E13;&#x95E8;&#x4E3A;&#x52A8;&#x6001;&#x521B;&#x5EFA;&#x7684;&#x4EFB;&#x52A1;&#x800C;&#x8BBE;&#x8BA1;&#x7684; supervisor&#xFF0C;&#x5185;&#x90E8;&#x5B9E;&#x9645;&#x4F7F;&#x7528;&#x7684;&#x662F; <code>DynamicSupervisor</code>&#x3002;  </p>
+<h3 id="setup">Setup</h3>
+<p><code>Task.Supervisor</code> &#x4F7F;&#x7528;&#x8D77;&#x6765;&#x548C;&#x5176;&#x4ED6;&#x7684; supervisors &#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x533A;&#x522B;&#xFF1A;  </p>
+<pre><code class="lang-elixir">children = [
+  {Task.Supervisor, <span class="hljs-symbol">name:</span> ExampleApp.TaskSupervisor, <span class="hljs-symbol">restart:</span> <span class="hljs-symbol">:transient</span>}
+]
+
+{<span class="hljs-symbol">:ok</span>, pid} = Supervisor.start_link(children, <span class="hljs-symbol">strategy:</span> <span class="hljs-symbol">:one_for_one</span>)
+</code></pre>
+<p><code>Supervisor</code> &#x548C; <code>Task.Supervisor</code> &#x4E3B;&#x8981;&#x7684;&#x4E0D;&#x540C;&#x662F; <code>Task.Supervisor</code> &#x7684;&#x9ED8;&#x8BA4;&#x91CD;&#x542F;&#x7B56;&#x7565;&#x662F; <code>:temporary</code>&#xFF08;&#x7EDD;&#x4E0D;&#x91CD;&#x542F;&#x5B50;&#x4EFB;&#x52A1;&#xFF09;&#x3002;</p>
+<h3 id="&#x53D7;&#x76D1;&#x7BA1;&#x7684;-tasks">&#x53D7;&#x76D1;&#x7BA1;&#x7684; Tasks</h3>
+<p>Supervisor &#x542F;&#x52A8;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>start_child/2</code> &#x51FD;&#x6570;&#x6765;&#x521B;&#x5EFA;&#x53D7;&#x76D1;&#x7BA1;&#x7684; task:  </p>
+<pre><code class="lang-elixir">{<span class="hljs-symbol">:ok</span>, pid} = Task.Supervisor.start_child(ExampleApp.TaskSupervisor, <span class="hljs-keyword">fn</span> -&gt; background_work <span class="hljs-keyword">end</span>)
+</code></pre>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7684;&#x4EFB;&#x52A1;&#x8FC7;&#x65E9;&#x5730;&#x5D29;&#x6E83;&#x6389;&#xFF0C;&#x5B83;&#x4F1A;&#x88AB;&#x81EA;&#x52A8;&#x542F;&#x52A8;&#x3002;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x5728;&#x5904;&#x7406;&#x5927;&#x91CF;&#x6D8C;&#x6765;&#x7684;&#x8BF7;&#x6C42;&#x6216;&#x8005;&#x540E;&#x53F0;&#x5DE5;&#x4F5C;&#x7684;&#x65F6;&#x5019;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;  </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="otp-concurrency.html" class="navigation navigation-prev " aria-label="Previous page: OTP并发]">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="otp-distribution.html" class="navigation navigation-next " aria-label="Next page: OTP 分布式">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"version":"1.1.1","title":"OTP Supervisors","level":"2.6","depth":1,"next":{"title":"OTP 分布式","level":"2.7","depth":1,"path":"lessons/advanced/otp-distribution.md","ref":"lessons/advanced/otp-distribution.md","articles":[]},"previous":{"title":"OTP并发]","level":"2.5","depth":1,"path":"lessons/advanced/otp-concurrency.md","ref":"lessons/advanced/otp-concurrency.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lessons/advanced/otp-supervisors.md","mtime":"2019-11-04T13:43:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-04T15:36:14.037Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
